@@ -1,0 +1,17 @@
+# Environment variables (credentials - never commit!)
+.env
+
+# Node
+node_modules/
+npm-debug.log*
+
+# Claude Code
+.claude/
+
+# Temp files
+unpacked_hw1/
+generate_hw1_report.py
+
+# OS
+.DS_Store
+Thumbs.db
