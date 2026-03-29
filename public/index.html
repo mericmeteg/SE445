@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lead Capture — Contact Us</title>
+  <meta name="description" content="Submit your details and we'll follow up within one business day." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <style>
+    /* ── Reset & tokens ─────────────────────────────────────────── */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg-base:     #0d0f14;
+      --bg-card:     #13161f;
+      --bg-input:    #1a1d29;
+      --border:      #272b3d;
+      --border-focus:#6c63ff;
+      --accent:      #6c63ff;
+      --accent-glow: rgba(108, 99, 255, 0.35);
+      --accent-2:    #a78bfa;
+      --text-primary:#e8eaf6;
+      --text-muted:  #7b82a6;
+      --success-bg:  #0d2b1e;
+      --success-border:#2dd4a0;
+      --success-text:#2dd4a0;
+      --error-bg:    #2b0d0d;
+      --error-border:#f87171;
+      --error-text:  #f87171;
+      --radius-sm:   8px;
+      --radius-md:   14px;
+      --radius-lg:   20px;
+      --transition:  0.22s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'Inter', system-ui, sans-serif;
+      background: var(--bg-base);
+      color: var(--text-primary);
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 24px 16px;
+      /* Subtle animated gradient bg */
+      background-image:
+        radial-gradient(ellipse 80% 60% at 20% 10%, rgba(108,99,255,0.12) 0%, transparent 60%),
+        radial-gradient(ellipse 60% 50% at 80% 90%, rgba(167,139,250,0.08) 0%, transparent 60%);
+    }
+
+    /* ── Page wrapper ───────────────────────────────────────────── */
+    .page {
+      width: 100%;
+      max-width: 520px;
+      display: flex;
+      flex-direction: column;
+      gap: 32px;
+    }
+
+    /* ── Header ─────────────────────────────────────────────────── */
+    .header { text-align: center; }
+
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: rgba(108,99,255,0.15);
+      border: 1px solid rgba(108,99,255,0.3);
+      border-radius: 100px;
+      padding: 5px 14px;
+      font-size: 12px;
+      font-weight: 500;
+      color: var(--accent-2);
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      margin-bottom: 18px;
+    }
+
+    .badge-dot {
+      width: 7px; height: 7px;
+      border-radius: 50%;
+      background: var(--accent-2);
+      animation: pulse 2s ease-in-out infinite;
+    }
+
+    @keyframes pulse {
+      0%, 100% { opacity: 1; transform: scale(1); }
+      50%       { opacity: 0.55; transform: scale(0.85); }
+    }
+
+    h1 {
+      font-size: clamp(26px, 5vw, 34px);
+      font-weight: 700;
+      line-height: 1.2;
+      background: linear-gradient(135deg, #e8eaf6 0%, var(--accent-2) 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      margin-bottom: 10px;
+    }
+
+    .subtitle {
+      font-size: 15px;
+      color: var(--text-muted);
+      line-height: 1.6;
+      font-weight: 400;
+    }
+
+    /* ── Card ───────────────────────────────────────────────────── */
+    .card {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 36px 32px;
+      box-shadow:
+        0 0 0 1px rgba(108,99,255,0.06),
+        0 24px 64px rgba(0,0,0,0.45),
+        0 2px 8px rgba(0,0,0,0.3);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .card::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0;
+      height: 1px;
+      background: linear-gradient(90deg, transparent, rgba(108,99,255,0.5), transparent);
+    }
+
+    /* ── Form elements ──────────────────────────────────────────── */
+    .form { display: flex; flex-direction: column; gap: 20px; }
+
+    .field { display: flex; flex-direction: column; gap: 7px; }
+
+    label {
+      font-size: 13px;
+      font-weight: 500;
+      color: var(--text-primary);
+      letter-spacing: 0.02em;
+      display: flex;
+      align-items: center;
+      gap: 4px;
+    }
+
+    label .required { color: var(--accent-2); }
+
+    input, textarea {
+      background: var(--bg-input);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-sm);
+      color: var(--text-primary);
+      font-family: inherit;
+      font-size: 14.5px;
+      padding: 11px 14px;
+      transition: border-color var(--transition), box-shadow var(--transition);
+      outline: none;
+      width: 100%;
+      appearance: none;
+    }
+
+    input::placeholder, textarea::placeholder {
+      color: var(--text-muted);
+      font-weight: 400;
+    }
+
+    input:focus, textarea:focus {
+      border-color: var(--border-focus);
+      box-shadow: 0 0 0 3px var(--accent-glow);
+    }
+
+    textarea {
+      resize: vertical;
+      min-height: 110px;
+      line-height: 1.6;
+    }
+
+    /* field validation states */
+    input.invalid, textarea.invalid {
+      border-color: var(--error-border);
+      box-shadow: 0 0 0 3px rgba(248,113,113,0.18);
+    }
+
+    .field-error {
+      font-size: 12px;
+      color: var(--error-text);
+      display: none;
+      margin-top: 2px;
+    }
+
+    .field-error.visible { display: block; }
+
+    /* ── Submit button ──────────────────────────────────────────── */
+    .btn-submit {
+      position: relative;
+      background: var(--accent);
+      color: #fff;
+      border: none;
+      border-radius: var(--radius-sm);
+      padding: 13px 24px;
+      font-family: inherit;
+      font-size: 15px;
+      font-weight: 600;
+      cursor: pointer;
+      width: 100%;
+      margin-top: 4px;
+      transition:
+        background var(--transition),
+        box-shadow var(--transition),
+        transform var(--transition);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      letter-spacing: 0.01em;
+      overflow: hidden;
+    }
+
+    .btn-submit:hover:not(:disabled) {
+      background: #7c74ff;
+      box-shadow: 0 0 24px rgba(108,99,255,0.45);
+      transform: translateY(-1px);
+    }
+
+    .btn-submit:active:not(:disabled) { transform: translateY(0); }
+
+    .btn-submit:disabled {
+      opacity: 0.6;
+      cursor: not-allowed;
+    }
+
+    /* Spinner */
+    .spinner {
+      width: 17px; height: 17px;
+      border: 2.5px solid rgba(255,255,255,0.3);
+      border-top-color: #fff;
+      border-radius: 50%;
+      animation: spin 0.7s linear infinite;
+      display: none;
+    }
+
+    .btn-submit.loading .btn-label { display: none; }
+    .btn-submit.loading .spinner   { display: block; }
+
+    @keyframes spin { to { transform: rotate(360deg); } }
+
+    /* ── Response box ───────────────────────────────────────────── */
+    .response-box {
+      border-radius: var(--radius-md);
+      padding: 20px 22px;
+      display: none;
+      animation: fadeSlideIn 0.35s ease;
+    }
+
+    .response-box.success {
+      background: var(--success-bg);
+      border: 1px solid var(--success-border);
+    }
+
+    .response-box.error {
+      background: var(--error-bg);
+      border: 1px solid var(--error-border);
+    }
+
+    .response-box.visible { display: block; }
+
+    .response-icon {
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+
+    .response-title {
+      font-size: 15px;
+      font-weight: 600;
+      margin-bottom: 6px;
+    }
+
+    .response-box.success .response-title { color: var(--success-text); }
+    .response-box.error   .response-title { color: var(--error-text); }
+
+    .response-body {
+      font-size: 14px;
+      color: var(--text-muted);
+      line-height: 1.65;
+    }
+
+    .ai-tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      font-size: 11px;
+      font-weight: 500;
+      color: var(--accent-2);
+      background: rgba(108,99,255,0.12);
+      border-radius: 100px;
+      padding: 2px 9px;
+      margin-bottom: 8px;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+    }
+
+    @keyframes fadeSlideIn {
+      from { opacity: 0; transform: translateY(10px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+
+    /* ── Features strip ─────────────────────────────────────────── */
+    .features {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 12px;
+    }
+
+    .feature {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-md);
+      padding: 16px 14px;
+      text-align: center;
+    }
+
+    .feature-icon { font-size: 22px; margin-bottom: 7px; }
+    .feature-label { font-size: 12px; color: var(--text-muted); line-height: 1.4; }
+
+    /* ── Footer ─────────────────────────────────────────────────── */
+    .footer {
+      text-align: center;
+      font-size: 12px;
+      color: var(--text-muted);
+      padding-bottom: 8px;
+    }
+
+    .footer code {
+      background: rgba(108,99,255,0.12);
+      border: 1px solid rgba(108,99,255,0.2);
+      border-radius: 4px;
+      padding: 2px 7px;
+      font-size: 11.5px;
+      color: var(--accent-2);
+      font-family: 'JetBrains Mono', 'Fira Code', ui-monospace, monospace;
+    }
+
+    /* ── Responsive ─────────────────────────────────────────────── */
+    @media (max-width: 480px) {
+      .card { padding: 26px 18px; }
+      .features { grid-template-columns: 1fr 1fr; }
+      .features .feature:last-child { grid-column: span 2; }
+    }
+  </style>
+</head>
+<body>
+
+<main class="page" role="main">
+
+  <!-- Header -->
+  <header class="header">
+    <div class="badge">
+      <span class="badge-dot"></span>
+      Webhook Active
+    </div>
+    <h1>Let's Work Together</h1>
+    <p class="subtitle">
+      Send us a message and our AI will acknowledge your inquiry<br />
+      while our team follows up within 1 business day.
+    </p>
+  </header>
+
+  <!-- Form card -->
+  <div class="card" role="region" aria-label="Contact form">
+    <form id="leadForm" class="form" novalidate>
+
+      <!-- Name -->
+      <div class="field">
+        <label for="name">
+          Full Name <span class="required" aria-hidden="true">*</span>
+        </label>
+        <input
+          id="name"
+          type="text"
+          name="name"
+          placeholder="Jane Smith"
+          autocomplete="name"
+          required
+          aria-required="true"
+          aria-describedby="nameError"
+        />
+        <span id="nameError" class="field-error" role="alert">Please enter your name.</span>
+      </div>
+
+      <!-- Email -->
+      <div class="field">
+        <label for="email">
+          Email Address <span class="required" aria-hidden="true">*</span>
+        </label>
+        <input
+          id="email"
+          type="email"
+          name="email"
+          placeholder="jane@example.com"
+          autocomplete="email"
+          required
+          aria-required="true"
+          aria-describedby="emailError"
+        />
+        <span id="emailError" class="field-error" role="alert">Please enter a valid email address.</span>
+      </div>
+
+      <!-- Message -->
+      <div class="field">
+        <label for="message">
+          Message <span class="required" aria-hidden="true">*</span>
+        </label>
+        <textarea
+          id="message"
+          name="message"
+          placeholder="Tell us about your project or how we can help…"
+          required
+          aria-required="true"
+          aria-describedby="messageError"
+        ></textarea>
+        <span id="messageError" class="field-error" role="alert">Please enter your message.</span>
+      </div>
+
+      <!-- Submit -->
+      <button id="submitBtn" type="submit" class="btn-submit" aria-live="polite">
+        <span class="btn-label">Send Message →</span>
+        <span class="spinner" aria-hidden="true"></span>
+      </button>
+
+    </form>
+
+    <!-- Response box (shown after submit) -->
+    <div id="responseBox" class="response-box" aria-live="polite" aria-atomic="true">
+      <div id="responseIcon" class="response-icon"></div>
+      <div id="responseTitle" class="response-title"></div>
+      <div id="responseBody" class="response-body"></div>
+    </div>
+  </div>
+
+  <!-- Features strip -->
+  <div class="features" aria-label="Pipeline steps">
+    <div class="feature">
+      <div class="feature-icon">🪝</div>
+      <div class="feature-label">Webhook<br />triggered</div>
+    </div>
+    <div class="feature">
+      <div class="feature-icon">📊</div>
+      <div class="feature-label">Saved to<br />Google Sheets</div>
+    </div>
+    <div class="feature">
+      <div class="feature-icon">🤖</div>
+      <div class="feature-label">AI response<br />generated</div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    Submits to <code>POST /webhook</code> &nbsp;·&nbsp; Built with Node.js + Express
+  </footer>
+
+</main>
+
+<script>
+  const form       = document.getElementById('leadForm');
+  const submitBtn  = document.getElementById('submitBtn');
+  const responseBox   = document.getElementById('responseBox');
+  const responseIcon  = document.getElementById('responseIcon');
+  const responseTitle = document.getElementById('responseTitle');
+  const responseBody  = document.getElementById('responseBody');
+
+  // ── Client-side validation ─────────────────────────────────────
+  function validateField(id, check, errorId) {
+    const el  = document.getElementById(id);
+    const err = document.getElementById(errorId);
+    const ok  = check(el.value.trim());
+    el.classList.toggle('invalid', !ok);
+    err.classList.toggle('visible', !ok);
+    return ok;
+  }
+
+  function validateAll() {
+    const nameOk    = validateField('name',    v => v.length > 0,                        'nameError');
+    const emailOk   = validateField('email',   v => /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v),'emailError');
+    const messageOk = validateField('message', v => v.length > 0,                        'messageError');
+    return nameOk && emailOk && messageOk;
+  }
+
+  // Clear error on input
+  ['name', 'email', 'message'].forEach(id => {
+    document.getElementById(id).addEventListener('input', () => {
+      document.getElementById(id).classList.remove('invalid');
+      document.getElementById(`${id}Error`).classList.remove('visible');
+    });
+  });
+
+  // ── Form submission ────────────────────────────────────────────
+  form.addEventListener('submit', async (e) => {
+    e.preventDefault();
+
+    if (!validateAll()) return;
+
+    // Hide old response
+    responseBox.className  = 'response-box';
+    responseBox.classList.remove('visible');
+
+    // Loading state
+    submitBtn.disabled = true;
+    submitBtn.classList.add('loading');
+    submitBtn.setAttribute('aria-label', 'Sending…');
+
+    const payload = {
+      name:    document.getElementById('name').value.trim(),
+      email:   document.getElementById('email').value.trim(),
+      message: document.getElementById('message').value.trim(),
+    };
+
+    try {
+      const res  = await fetch('/webhook', {
+        method:  'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body:    JSON.stringify(payload),
+      });
+
+      const data = await res.json();
+
+      if (res.ok && data.success) {
+        // Success
+        responseIcon.textContent  = '✅';
+        responseTitle.textContent = 'Message received!';
+        responseBody.innerHTML    =
+          `<span class="ai-tag">✦ AI Response</span><br />${escapeHtml(data.aiResponse)}`;
+        responseBox.className = 'response-box success visible';
+        form.reset();
+      } else {
+        // Server-side validation error
+        const detail = data.missing
+          ? `Missing fields: ${data.missing.join(', ')}`
+          : (data.error || 'Something went wrong.');
+        showError(detail);
+      }
+
+    } catch (networkErr) {
+      showError('Could not reach the server. Please check your connection and try again.');
+      console.error('Fetch error:', networkErr);
+    } finally {
+      submitBtn.disabled = false;
+      submitBtn.classList.remove('loading');
+      submitBtn.setAttribute('aria-label', '');
+    }
+  });
+
+  function showError(msg) {
+    responseIcon.textContent  = '⚠️';
+    responseTitle.textContent = 'Submission failed';
+    responseBody.textContent  = msg;
+    responseBox.className = 'response-box error visible';
+  }
+
+  function escapeHtml(str) {
+    return String(str)
+      .replace(/&/g, '&amp;')
+      .replace(/</g, '&lt;')
+      .replace(/>/g, '&gt;')
+      .replace(/"/g, '&quot;')
+      .replace(/\n/g, '<br />');
+  }
+</script>
+
+</body>
+</html>

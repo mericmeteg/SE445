@@ -1,0 +1,1452 @@
+<?xml version="1.0" encoding="UTF-8"?><w:document xmlns:wpc="http://schemas.microsoft.com/office/word/2010/wordprocessingCanvas" xmlns:cx="http://schemas.microsoft.com/office/drawing/2014/chartex" xmlns:cx1="http://schemas.microsoft.com/office/drawing/2015/9/8/chartex" xmlns:cx2="http://schemas.microsoft.com/office/drawing/2015/10/21/chartex" xmlns:cx3="http://schemas.microsoft.com/office/drawing/2016/5/9/chartex" xmlns:cx4="http://schemas.microsoft.com/office/drawing/2016/5/10/chartex" xmlns:cx5="http://schemas.microsoft.com/office/drawing/2016/5/11/chartex" xmlns:cx6="http://schemas.microsoft.com/office/drawing/2016/5/12/chartex" xmlns:cx7="http://schemas.microsoft.com/office/drawing/2016/5/13/chartex" xmlns:cx8="http://schemas.microsoft.com/office/drawing/2016/5/14/chartex" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:aink="http://schemas.microsoft.com/office/drawing/2016/ink" xmlns:am3d="http://schemas.microsoft.com/office/drawing/2017/model3d" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:oel="http://schemas.microsoft.com/office/2019/extlst" xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships" xmlns:m="http://schemas.openxmlformats.org/officeDocument/2006/math" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:wp14="http://schemas.microsoft.com/office/word/2010/wordprocessingDrawing" xmlns:wp="http://schemas.openxmlformats.org/drawingml/2006/wordprocessingDrawing" xmlns:w10="urn:schemas-microsoft-com:office:word" xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main" xmlns:w14="http://schemas.microsoft.com/office/word/2010/wordml" xmlns:w15="http://schemas.microsoft.com/office/word/2012/wordml" xmlns:w16cex="http://schemas.microsoft.com/office/word/2018/wordml/cex" xmlns:w16cid="http://schemas.microsoft.com/office/word/2016/wordml/cid" xmlns:w16="http://schemas.microsoft.com/office/word/2018/wordml" xmlns:w16du="http://schemas.microsoft.com/office/word/2023/wordml/word16du" xmlns:w16sdtdh="http://schemas.microsoft.com/office/word/2020/wordml/sdtdatahash" xmlns:w16sdtfl="http://schemas.microsoft.com/office/word/2024/wordml/sdtformatlock" xmlns:w16se="http://schemas.microsoft.com/office/word/2015/wordml/symex" xmlns:wpg="http://schemas.microsoft.com/office/word/2010/wordprocessingGroup" xmlns:wpi="http://schemas.microsoft.com/office/word/2010/wordprocessingInk" xmlns:wne="http://schemas.microsoft.com/office/word/2006/wordml" xmlns:wps="http://schemas.microsoft.com/office/word/2010/wordprocessingShape" mc:Ignorable="w14 w15 w16se w16cid w16 w16cex w16sdtdh w16sdtfl w16du wp14">
+  <w:body>
+    <w:p w14:paraId="404D8B8C" w14:textId="486BF2EA" w:rsidR="00603750" w:rsidRPr="00603750" w:rsidRDefault="00603750" w:rsidP="00603750">
+      <w:pPr>
+        <w:pStyle w:val="Heading1"/>
+      </w:pPr>
+      <w:r>
+        <w:t>SE 445 – Homeworks &amp; Final Project (Antigravity/n8n)</w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="79EF3E6A" w14:textId="77777777" w:rsidR="00603750" w:rsidRPr="00603750" w:rsidRDefault="00603750" w:rsidP="00603750">
+      <w:pPr>
+        <w:pStyle w:val="Heading2"/>
+      </w:pPr>
+      <w:r>
+        <w:t>1. Deadlines</w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="6A3A706D" w14:textId="5E110873" w:rsidR="00603750" w:rsidRPr="00603750" w:rsidRDefault="00603750" w:rsidP="00603750">
+      <w:pPr>
+        <w:numPr>
+          <w:ilvl w:val="0"/>
+          <w:numId w:val="1"/>
+        </w:numPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:b/>
+          <w:bCs/>
+        </w:rPr>
+        <w:t>HW1 due:</w:t>
+      </w:r>
+      <w:r>
+        <w:t> March 31, 2026</w:t>
+      </w:r>
+      
+      
+    </w:p>
+    <w:p w14:paraId="5EF7F29E" w14:textId="77777777" w:rsidR="00603750" w:rsidRPr="00603750" w:rsidRDefault="00603750" w:rsidP="00603750">
+      <w:pPr>
+        <w:numPr>
+          <w:ilvl w:val="0"/>
+          <w:numId w:val="1"/>
+        </w:numPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:b/>
+          <w:bCs/>
+        </w:rPr>
+        <w:t>HW2 due:</w:t>
+      </w:r>
+      <w:r>
+        <w:t> April 21, 2026</w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="69237C40" w14:textId="77777777" w:rsidR="00603750" w:rsidRPr="00603750" w:rsidRDefault="00603750" w:rsidP="00603750">
+      <w:pPr>
+        <w:numPr>
+          <w:ilvl w:val="0"/>
+          <w:numId w:val="1"/>
+        </w:numPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:b/>
+          <w:bCs/>
+        </w:rPr>
+        <w:t>HW3 due:</w:t>
+      </w:r>
+      <w:r>
+        <w:t> (TBA)</w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="11628FD3" w14:textId="77777777" w:rsidR="00603750" w:rsidRPr="00603750" w:rsidRDefault="00603750" w:rsidP="00603750">
+      <w:pPr>
+        <w:numPr>
+          <w:ilvl w:val="0"/>
+          <w:numId w:val="1"/>
+        </w:numPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:b/>
+          <w:bCs/>
+        </w:rPr>
+        <w:t>Final Project submission:</w:t>
+      </w:r>
+      <w:r>
+        <w:t> May 12, 2026</w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="0D344CB3" w14:textId="77777777" w:rsidR="00603750" w:rsidRPr="00603750" w:rsidRDefault="00603750" w:rsidP="00603750">
+      <w:pPr>
+        <w:numPr>
+          <w:ilvl w:val="0"/>
+          <w:numId w:val="1"/>
+        </w:numPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:b/>
+          <w:bCs/>
+        </w:rPr>
+        <w:t>Final Project presentation:</w:t>
+      </w:r>
+      <w:r>
+        <w:t> May 26, 2026</w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="054EF7BF" w14:textId="77777777" w:rsidR="00603750" w:rsidRPr="00603750" w:rsidRDefault="00603750" w:rsidP="00603750">
+      <w:pPr>
+        <w:pStyle w:val="Heading2"/>
+      </w:pPr>
+      <w:r>
+        <w:t>2. Project Topic &amp; Groups</w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="418301B9" w14:textId="07622B5F" w:rsidR="00603750" w:rsidRPr="00603750" w:rsidRDefault="00603750" w:rsidP="00603750">
+      <w:pPr>
+        <w:numPr>
+          <w:ilvl w:val="0"/>
+          <w:numId w:val="2"/>
+        </w:numPr>
+      </w:pPr>
+      <w:r>
+        <w:t>Pick </w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:b/>
+          <w:bCs/>
+        </w:rPr>
+        <w:t>one project type</w:t>
+      </w:r>
+      <w:r>
+        <w:t> (Lead capture, Customer support triage, etc.).</w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="59E5FDE8" w14:textId="4F9002D7" w:rsidR="00603750" w:rsidRPr="00603750" w:rsidRDefault="00603750" w:rsidP="00603750">
+      <w:pPr>
+        <w:numPr>
+          <w:ilvl w:val="0"/>
+          <w:numId w:val="2"/>
+        </w:numPr>
+      </w:pPr>
+      <w:r>
+        <w:t>Form groups of </w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:b/>
+          <w:bCs/>
+        </w:rPr>
+        <w:t>ideally 5-6 students</w:t>
+      </w:r>
+      
+      
+      <w:r>
+        <w:t>.</w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="674A961B" w14:textId="3B65832C" w:rsidR="00603750" w:rsidRPr="00603750" w:rsidRDefault="00603750" w:rsidP="00603750">
+      <w:pPr>
+        <w:numPr>
+          <w:ilvl w:val="0"/>
+          <w:numId w:val="2"/>
+        </w:numPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:b/>
+          <w:bCs/>
+        </w:rPr>
+        <w:t>Each group must have a unique topic</w:t>
+      </w:r>
+      <w:r>
+        <w:t> (first-come, first-served).</w:t>
+      </w:r>
+      
+      
+      
+      
+    </w:p>
+    <w:p w14:paraId="336D6812" w14:textId="35240F49" w:rsidR="00603750" w:rsidRPr="00603750" w:rsidRDefault="00603750" w:rsidP="00603750">
+      <w:pPr>
+        <w:numPr>
+          <w:ilvl w:val="0"/>
+          <w:numId w:val="2"/>
+        </w:numPr>
+      </w:pPr>
+      <w:r>
+        <w:t>Inform the instructor of your </w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:b/>
+          <w:bCs/>
+        </w:rPr>
+        <w:t>topic and group members as soon as possible</w:t>
+      </w:r>
+      
+      
+      <w:r>
+        <w:t>.</w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="073E415A" w14:textId="77777777" w:rsidR="00603750" w:rsidRPr="00603750" w:rsidRDefault="00603750" w:rsidP="00603750">
+      <w:pPr>
+        <w:numPr>
+          <w:ilvl w:val="0"/>
+          <w:numId w:val="2"/>
+        </w:numPr>
+      </w:pPr>
+      <w:r>
+        <w:t>Your </w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:b/>
+          <w:bCs/>
+        </w:rPr>
+        <w:t>Final Project and all 3 HWs</w:t>
+      </w:r>
+      <w:r>
+        <w:t> will follow the </w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:b/>
+          <w:bCs/>
+        </w:rPr>
+        <w:t>same topic</w:t>
+      </w:r>
+      <w:r>
+        <w:t>.</w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="799259CD" w14:textId="77777777" w:rsidR="00603750" w:rsidRPr="00603750" w:rsidRDefault="00603750" w:rsidP="00603750">
+      <w:pPr>
+        <w:pStyle w:val="Heading2"/>
+      </w:pPr>
+      <w:r>
+        <w:t>3. Tools &amp; Bonus</w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="7E8C1610" w14:textId="77777777" w:rsidR="00603750" w:rsidRPr="00603750" w:rsidRDefault="00603750" w:rsidP="00603750">
+      <w:pPr>
+        <w:numPr>
+          <w:ilvl w:val="0"/>
+          <w:numId w:val="3"/>
+        </w:numPr>
+      </w:pPr>
+      <w:r>
+        <w:t>Main environment: </w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:b/>
+          <w:bCs/>
+        </w:rPr>
+        <w:t>Google Antigravity</w:t>
+      </w:r>
+      <w:r>
+        <w:t> (agents + workflows).</w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="5F37691C" w14:textId="32D9703B" w:rsidR="00603750" w:rsidRPr="00603750" w:rsidRDefault="00603750" w:rsidP="00603750">
+      <w:pPr>
+        <w:numPr>
+          <w:ilvl w:val="0"/>
+          <w:numId w:val="3"/>
+        </w:numPr>
+      </w:pPr>
+      <w:r>
+        <w:t>You </w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:b/>
+          <w:bCs/>
+        </w:rPr>
+        <w:t>may</w:t>
+      </w:r>
+      <w:r>
+        <w:t> use </w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:b/>
+          <w:bCs/>
+        </w:rPr>
+        <w:t>n8n</w:t>
+      </w:r>
+      <w:r>
+        <w:t>instead.</w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="6BC83667" w14:textId="77777777" w:rsidR="00603750" w:rsidRDefault="00603750" w:rsidP="00603750">
+      <w:pPr>
+        <w:numPr>
+          <w:ilvl w:val="0"/>
+          <w:numId w:val="3"/>
+        </w:numPr>
+      </w:pPr>
+      <w:r>
+        <w:t>Using </w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:b/>
+          <w:bCs/>
+        </w:rPr>
+        <w:t>Antigravity</w:t>
+      </w:r>
+      <w:r>
+        <w:t> gives you </w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:b/>
+          <w:bCs/>
+        </w:rPr>
+        <w:t>+5 bonus points</w:t>
+      </w:r>
+      <w:r>
+        <w:t> in advance.</w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="52010521" w14:textId="2A084302" w:rsidR="00603750" w:rsidRDefault="00603750" w:rsidP="00603750">
+      <w:pPr>
+        <w:numPr>
+          <w:ilvl w:val="0"/>
+          <w:numId w:val="3"/>
+        </w:numPr>
+      </w:pPr>
+      <w:r>
+        <w:t xml:space="preserve">Weekly Lab activities introduce up to </w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:b/>
+          <w:bCs/>
+        </w:rPr>
+        <w:t>+5 bonus points</w:t>
+      </w:r>
+      <w:r>
+        <w:t> as well.</w:t>
+      </w:r>
+      
+    </w:p>
+    <w:p w14:paraId="04E9DAEA" w14:textId="77777777" w:rsidR="00084126" w:rsidRPr="00603750" w:rsidRDefault="00084126" w:rsidP="00084126">
+      <w:pPr>
+        <w:ind w:left="720"/>
+      </w:pPr>
+    </w:p>
+    <w:p w14:paraId="663D0781" w14:textId="77777777" w:rsidR="00603750" w:rsidRPr="00603750" w:rsidRDefault="00603750" w:rsidP="00603750">
+      <w:pPr>
+        <w:pStyle w:val="Heading2"/>
+      </w:pPr>
+      <w:r>
+        <w:t>4. Common Rules for All Homeworks &amp; Final Project</w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="4E55D713" w14:textId="1A9E054D" w:rsidR="00603750" w:rsidRPr="00603750" w:rsidRDefault="00603750" w:rsidP="00603750">
+      <w:r>
+        <w:t>You may build everything using prompts in </w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:b/>
+          <w:bCs/>
+        </w:rPr>
+        <w:t>Antigravity/n8n</w:t>
+      </w:r>
+      <w:r>
+        <w:t>, but you must:</w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="4E28CD5E" w14:textId="77777777" w:rsidR="00603750" w:rsidRPr="00603750" w:rsidRDefault="00603750" w:rsidP="00603750">
+      <w:pPr>
+        <w:numPr>
+          <w:ilvl w:val="0"/>
+          <w:numId w:val="4"/>
+        </w:numPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:b/>
+          <w:bCs/>
+        </w:rPr>
+        <w:t>Understand your workflow</w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="0E5B6458" w14:textId="77777777" w:rsidR="00603750" w:rsidRPr="00603750" w:rsidRDefault="00603750" w:rsidP="00603750">
+      <w:pPr>
+        <w:numPr>
+          <w:ilvl w:val="1"/>
+          <w:numId w:val="4"/>
+        </w:numPr>
+      </w:pPr>
+      <w:r>
+        <w:t>Walk through it </w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:b/>
+          <w:bCs/>
+        </w:rPr>
+        <w:t>live</w:t>
+      </w:r>
+      <w:r>
+        <w:t>, step by step.</w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="63254B99" w14:textId="77777777" w:rsidR="00603750" w:rsidRPr="00603750" w:rsidRDefault="00603750" w:rsidP="00603750">
+      <w:pPr>
+        <w:numPr>
+          <w:ilvl w:val="1"/>
+          <w:numId w:val="4"/>
+        </w:numPr>
+      </w:pPr>
+      <w:r>
+        <w:t>You </w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:b/>
+          <w:bCs/>
+        </w:rPr>
+        <w:t>cannot</w:t>
+      </w:r>
+      <w:r>
+        <w:t> just read; you must explain what each step does.</w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="28D21F4D" w14:textId="77777777" w:rsidR="00603750" w:rsidRPr="00603750" w:rsidRDefault="00603750" w:rsidP="00603750">
+      <w:pPr>
+        <w:numPr>
+          <w:ilvl w:val="0"/>
+          <w:numId w:val="4"/>
+        </w:numPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:b/>
+          <w:bCs/>
+        </w:rPr>
+        <w:lastRenderedPageBreak/>
+        <w:t>Document clearly</w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="200783F9" w14:textId="77777777" w:rsidR="00603750" w:rsidRPr="00603750" w:rsidRDefault="00603750" w:rsidP="00603750">
+      <w:pPr>
+        <w:numPr>
+          <w:ilvl w:val="1"/>
+          <w:numId w:val="4"/>
+        </w:numPr>
+      </w:pPr>
+      <w:r>
+        <w:t>Describe main </w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:b/>
+          <w:bCs/>
+        </w:rPr>
+        <w:t>files, endpoints, and nodes</w:t>
+      </w:r>
+      <w:r>
+        <w:t> and their purposes in </w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:b/>
+          <w:bCs/>
+        </w:rPr>
+        <w:t>your own words</w:t>
+      </w:r>
+      <w:r>
+        <w:t>.</w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="5B5EA75F" w14:textId="77777777" w:rsidR="00603750" w:rsidRPr="00603750" w:rsidRDefault="00603750" w:rsidP="00603750">
+      <w:pPr>
+        <w:numPr>
+          <w:ilvl w:val="0"/>
+          <w:numId w:val="4"/>
+        </w:numPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:b/>
+          <w:bCs/>
+        </w:rPr>
+        <w:t>Show at least one test case</w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="5947BF07" w14:textId="77777777" w:rsidR="00603750" w:rsidRPr="00603750" w:rsidRDefault="00603750" w:rsidP="00603750">
+      <w:pPr>
+        <w:numPr>
+          <w:ilvl w:val="1"/>
+          <w:numId w:val="4"/>
+        </w:numPr>
+      </w:pPr>
+      <w:r>
+        <w:t>For </w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:b/>
+          <w:bCs/>
+        </w:rPr>
+        <w:t>each homework</w:t>
+      </w:r>
+      <w:r>
+        <w:t> and for the </w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:b/>
+          <w:bCs/>
+        </w:rPr>
+        <w:t>Final Project</w:t>
+      </w:r>
+      <w:r>
+        <w:t>, demonstrate at least </w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:b/>
+          <w:bCs/>
+        </w:rPr>
+        <w:t>one full test run</w:t>
+      </w:r>
+      <w:r>
+        <w:t>.</w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="1289FBEE" w14:textId="77777777" w:rsidR="00603750" w:rsidRPr="00603750" w:rsidRDefault="00603750" w:rsidP="00603750">
+      <w:pPr>
+        <w:pStyle w:val="Heading2"/>
+      </w:pPr>
+      <w:r>
+        <w:t>5. Deliverables</w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="52929C12" w14:textId="77777777" w:rsidR="00603750" w:rsidRPr="00603750" w:rsidRDefault="00603750" w:rsidP="00603750">
+      <w:pPr>
+        <w:pStyle w:val="Heading3"/>
+      </w:pPr>
+      <w:r>
+        <w:t>5.1. For each Homework (HW1, HW2, HW3)</w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="5D7A4ABC" w14:textId="77777777" w:rsidR="00603750" w:rsidRPr="00603750" w:rsidRDefault="00603750" w:rsidP="00603750">
+      <w:pPr>
+        <w:rPr>
+          <w:b/>
+          <w:bCs/>
+        </w:rPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:b/>
+          <w:bCs/>
+        </w:rPr>
+        <w:t>Submit:</w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="3791F33A" w14:textId="77777777" w:rsidR="00603750" w:rsidRPr="00603750" w:rsidRDefault="00603750" w:rsidP="00603750">
+      <w:pPr>
+        <w:numPr>
+          <w:ilvl w:val="0"/>
+          <w:numId w:val="5"/>
+        </w:numPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:b/>
+          <w:bCs/>
+        </w:rPr>
+        <w:t>GitHub repository link</w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="752CC53E" w14:textId="77777777" w:rsidR="00603750" w:rsidRPr="00603750" w:rsidRDefault="00603750" w:rsidP="00603750">
+      <w:pPr>
+        <w:numPr>
+          <w:ilvl w:val="0"/>
+          <w:numId w:val="5"/>
+        </w:numPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:b/>
+          <w:bCs/>
+        </w:rPr>
+        <w:t>Required code, configuration, and artifacts</w:t>
+      </w:r>
+      <w:r>
+        <w:t> (workflows, exports, etc.)</w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="5197DF2C" w14:textId="77777777" w:rsidR="00603750" w:rsidRPr="00603750" w:rsidRDefault="00603750" w:rsidP="00603750">
+      <w:pPr>
+        <w:numPr>
+          <w:ilvl w:val="0"/>
+          <w:numId w:val="5"/>
+        </w:numPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:b/>
+          <w:bCs/>
+        </w:rPr>
+        <w:t>Short Word report</w:t>
+      </w:r>
+      <w:r>
+        <w:t> explaining:</w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="4A597A5E" w14:textId="77777777" w:rsidR="00603750" w:rsidRPr="00603750" w:rsidRDefault="00603750" w:rsidP="00603750">
+      <w:pPr>
+        <w:numPr>
+          <w:ilvl w:val="1"/>
+          <w:numId w:val="5"/>
+        </w:numPr>
+      </w:pPr>
+      <w:r>
+        <w:t>How your solution meets the HW requirements</w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="65B84AC1" w14:textId="77777777" w:rsidR="00603750" w:rsidRPr="00603750" w:rsidRDefault="00603750" w:rsidP="00603750">
+      <w:pPr>
+        <w:numPr>
+          <w:ilvl w:val="1"/>
+          <w:numId w:val="5"/>
+        </w:numPr>
+      </w:pPr>
+      <w:r>
+        <w:t>How the workflow is structured (triggers, steps, outputs)</w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="0DDFB705" w14:textId="77777777" w:rsidR="00084126" w:rsidRDefault="00084126" w:rsidP="00084126"/>
+    <w:p w14:paraId="4F298ABA" w14:textId="77777777" w:rsidR="00603750" w:rsidRPr="00603750" w:rsidRDefault="00603750" w:rsidP="00084126">
+      <w:pPr>
+        <w:pStyle w:val="Heading3"/>
+        <w:ind w:left="360"/>
+      </w:pPr>
+      <w:r>
+        <w:t>5.2. For the Final Project</w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="07BBD545" w14:textId="77777777" w:rsidR="00603750" w:rsidRPr="00603750" w:rsidRDefault="00603750" w:rsidP="00603750">
+      <w:r>
+        <w:t>Submit:</w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="4BF1676C" w14:textId="77777777" w:rsidR="00603750" w:rsidRPr="00603750" w:rsidRDefault="00603750" w:rsidP="00603750">
+      <w:pPr>
+        <w:numPr>
+          <w:ilvl w:val="0"/>
+          <w:numId w:val="6"/>
+        </w:numPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:b/>
+          <w:bCs/>
+        </w:rPr>
+        <w:t>GitHub project page link</w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="07196C49" w14:textId="77777777" w:rsidR="00603750" w:rsidRPr="00603750" w:rsidRDefault="00603750" w:rsidP="00603750">
+      <w:pPr>
+        <w:numPr>
+          <w:ilvl w:val="0"/>
+          <w:numId w:val="6"/>
+        </w:numPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:b/>
+          <w:bCs/>
+        </w:rPr>
+        <w:t>Source code and configuration</w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="755BDC05" w14:textId="77777777" w:rsidR="00603750" w:rsidRPr="00603750" w:rsidRDefault="00603750" w:rsidP="00603750">
+      <w:pPr>
+        <w:numPr>
+          <w:ilvl w:val="0"/>
+          <w:numId w:val="6"/>
+        </w:numPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:b/>
+          <w:bCs/>
+        </w:rPr>
+        <w:t>Word report</w:t>
+      </w:r>
+      <w:r>
+        <w:t> including:</w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="6014B229" w14:textId="77777777" w:rsidR="00603750" w:rsidRPr="00603750" w:rsidRDefault="00603750" w:rsidP="00603750">
+      <w:pPr>
+        <w:numPr>
+          <w:ilvl w:val="1"/>
+          <w:numId w:val="6"/>
+        </w:numPr>
+      </w:pPr>
+      <w:r>
+        <w:t>Overall design and architecture</w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="1503C2F6" w14:textId="77777777" w:rsidR="00603750" w:rsidRPr="00603750" w:rsidRDefault="00603750" w:rsidP="00603750">
+      <w:pPr>
+        <w:numPr>
+          <w:ilvl w:val="1"/>
+          <w:numId w:val="6"/>
+        </w:numPr>
+      </w:pPr>
+      <w:r>
+        <w:t>Prompts and AI logic</w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="4C5B18B4" w14:textId="77777777" w:rsidR="00603750" w:rsidRPr="00603750" w:rsidRDefault="00603750" w:rsidP="00603750">
+      <w:pPr>
+        <w:numPr>
+          <w:ilvl w:val="1"/>
+          <w:numId w:val="6"/>
+        </w:numPr>
+      </w:pPr>
+      <w:r>
+        <w:t>Data schema (fields, storage, integrations)</w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="5DCF9A37" w14:textId="77777777" w:rsidR="00603750" w:rsidRPr="00603750" w:rsidRDefault="00603750" w:rsidP="00603750">
+      <w:pPr>
+        <w:numPr>
+          <w:ilvl w:val="0"/>
+          <w:numId w:val="6"/>
+        </w:numPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:b/>
+          <w:bCs/>
+        </w:rPr>
+        <w:t>Group live demo</w:t>
+      </w:r>
+      <w:r>
+        <w:t> during presentation week</w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="669B2754" w14:textId="77777777" w:rsidR="00603750" w:rsidRPr="00603750" w:rsidRDefault="00603750" w:rsidP="00603750">
+      <w:pPr>
+        <w:pStyle w:val="Heading2"/>
+      </w:pPr>
+      <w:r>
+        <w:lastRenderedPageBreak/>
+        <w:t>6. Homework Details</w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="6940B44E" w14:textId="77777777" w:rsidR="00603750" w:rsidRPr="00603750" w:rsidRDefault="00603750" w:rsidP="00603750">
+      <w:pPr>
+        <w:pStyle w:val="Heading3"/>
+      </w:pPr>
+      <w:r>
+        <w:t>6.1. HW1 – Component Foundations (30%)</w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="7252070C" w14:textId="77777777" w:rsidR="00603750" w:rsidRPr="00603750" w:rsidRDefault="00603750" w:rsidP="00603750">
+      <w:r>
+        <w:rPr>
+          <w:b/>
+          <w:bCs/>
+        </w:rPr>
+        <w:t>Goal:</w:t>
+      </w:r>
+      <w:r>
+        <w:t> Learn basic components and build a working pipeline.</w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="4FE55B15" w14:textId="77777777" w:rsidR="00603750" w:rsidRPr="00603750" w:rsidRDefault="00603750" w:rsidP="00603750">
+      <w:pPr>
+        <w:numPr>
+          <w:ilvl w:val="0"/>
+          <w:numId w:val="7"/>
+        </w:numPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:b/>
+          <w:bCs/>
+        </w:rPr>
+        <w:t>Required workflow pattern:</w:t>
+      </w:r>
+      <w:r>
+        <w:br/>
+        <w:t>Trigger (Form/Webhook/Schedule) → Processing Function → External API (Sheets/CRM) → AI Completion</w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="2CE41B0F" w14:textId="77777777" w:rsidR="00603750" w:rsidRPr="00603750" w:rsidRDefault="00603750" w:rsidP="00603750">
+      <w:pPr>
+        <w:numPr>
+          <w:ilvl w:val="0"/>
+          <w:numId w:val="7"/>
+        </w:numPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:b/>
+          <w:bCs/>
+        </w:rPr>
+        <w:t>Checks:</w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="45EECD8A" w14:textId="77777777" w:rsidR="00603750" w:rsidRPr="00603750" w:rsidRDefault="00603750" w:rsidP="00603750">
+      <w:pPr>
+        <w:numPr>
+          <w:ilvl w:val="1"/>
+          <w:numId w:val="7"/>
+        </w:numPr>
+      </w:pPr>
+      <w:r>
+        <w:t>Trigger runs correctly.</w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="754FFEB9" w14:textId="77777777" w:rsidR="00603750" w:rsidRPr="00603750" w:rsidRDefault="00603750" w:rsidP="00603750">
+      <w:pPr>
+        <w:numPr>
+          <w:ilvl w:val="1"/>
+          <w:numId w:val="7"/>
+        </w:numPr>
+      </w:pPr>
+      <w:r>
+        <w:t>First function receives data and initializes properly.</w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="18EBE603" w14:textId="77777777" w:rsidR="00603750" w:rsidRPr="00603750" w:rsidRDefault="00603750" w:rsidP="00603750">
+      <w:pPr>
+        <w:numPr>
+          <w:ilvl w:val="1"/>
+          <w:numId w:val="7"/>
+        </w:numPr>
+      </w:pPr>
+      <w:r>
+        <w:t>GitHub repo is accessible and includes the main logic file.</w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="2CE3BCA9" w14:textId="77777777" w:rsidR="00603750" w:rsidRPr="00603750" w:rsidRDefault="00603750" w:rsidP="00603750">
+      <w:pPr>
+        <w:numPr>
+          <w:ilvl w:val="0"/>
+          <w:numId w:val="7"/>
+        </w:numPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:b/>
+          <w:bCs/>
+        </w:rPr>
+        <w:t>Success =</w:t>
+      </w:r>
+      <w:r>
+        <w:t> Trigger fires and the </w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:b/>
+          <w:bCs/>
+        </w:rPr>
+        <w:t>first step</w:t>
+      </w:r>
+      <w:r>
+        <w:t> gets the data correctly.</w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="43D00BEA" w14:textId="77777777" w:rsidR="00603750" w:rsidRPr="00603750" w:rsidRDefault="00603750" w:rsidP="00603750">
+      <w:pPr>
+        <w:pStyle w:val="Heading3"/>
+      </w:pPr>
+      <w:r>
+        <w:t>6.2. HW2 – Data Input &amp; Persistence (30%)</w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="1F65E055" w14:textId="77777777" w:rsidR="00603750" w:rsidRPr="00603750" w:rsidRDefault="00603750" w:rsidP="00603750">
+      <w:r>
+        <w:rPr>
+          <w:b/>
+          <w:bCs/>
+        </w:rPr>
+        <w:t>Goal:</w:t>
+      </w:r>
+      <w:r>
+        <w:t> Set up a live data pipeline from user input to storage.</w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="225BEBEE" w14:textId="77777777" w:rsidR="00603750" w:rsidRPr="00603750" w:rsidRDefault="00603750" w:rsidP="00603750">
+      <w:pPr>
+        <w:numPr>
+          <w:ilvl w:val="0"/>
+          <w:numId w:val="8"/>
+        </w:numPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:b/>
+          <w:bCs/>
+        </w:rPr>
+        <w:t>Required workflow pattern:</w:t>
+      </w:r>
+      <w:r>
+        <w:br/>
+        <w:t>HTTP POST ({name, email, message}) → Antigravity Connector → Google Sheets / CRM</w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="3B76D524" w14:textId="77777777" w:rsidR="00603750" w:rsidRPr="00603750" w:rsidRDefault="00603750" w:rsidP="00603750">
+      <w:pPr>
+        <w:numPr>
+          <w:ilvl w:val="0"/>
+          <w:numId w:val="8"/>
+        </w:numPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:b/>
+          <w:bCs/>
+        </w:rPr>
+        <w:t>Checks:</w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="58DB8B16" w14:textId="42211898" w:rsidR="00603750" w:rsidRPr="00603750" w:rsidRDefault="00603750" w:rsidP="00603750">
+      <w:pPr>
+        <w:numPr>
+          <w:ilvl w:val="1"/>
+          <w:numId w:val="8"/>
+        </w:numPr>
+      </w:pPr>
+      <w:r>
+        <w:t>Endpoint accepts a JSON payload with </w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:b/>
+          <w:bCs/>
+        </w:rPr>
+        <w:t>exactly</w:t>
+      </w:r>
+      <w:r>
+        <w:t> name, email, and message.</w:t>
+      </w:r>
+      
+      
+    </w:p>
+    <w:p w14:paraId="7973AFFE" w14:textId="77777777" w:rsidR="00603750" w:rsidRPr="00603750" w:rsidRDefault="00603750" w:rsidP="00603750">
+      <w:pPr>
+        <w:numPr>
+          <w:ilvl w:val="1"/>
+          <w:numId w:val="8"/>
+        </w:numPr>
+      </w:pPr>
+      <w:r>
+        <w:t>Each valid request creates a new row/record with the </w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:b/>
+          <w:bCs/>
+        </w:rPr>
+        <w:t>raw data</w:t>
+      </w:r>
+      <w:r>
+        <w:t>.</w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="66339DC7" w14:textId="77777777" w:rsidR="00603750" w:rsidRPr="00603750" w:rsidRDefault="00603750" w:rsidP="00603750">
+      <w:pPr>
+        <w:numPr>
+          <w:ilvl w:val="1"/>
+          <w:numId w:val="8"/>
+        </w:numPr>
+      </w:pPr>
+      <w:r>
+        <w:t>Word report includes </w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:b/>
+          <w:bCs/>
+        </w:rPr>
+        <w:t>screenshot/proof</w:t>
+      </w:r>
+      <w:r>
+        <w:t> of data stored.</w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="6538DAE5" w14:textId="77777777" w:rsidR="00603750" w:rsidRPr="00603750" w:rsidRDefault="00603750" w:rsidP="00603750">
+      <w:pPr>
+        <w:numPr>
+          <w:ilvl w:val="0"/>
+          <w:numId w:val="8"/>
+        </w:numPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:b/>
+          <w:bCs/>
+        </w:rPr>
+        <w:t>Success =</w:t>
+      </w:r>
+      <w:r>
+        <w:t> No data loss, no formatting errors between endpoint and storage.</w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="16135777" w14:textId="77777777" w:rsidR="00603750" w:rsidRPr="00603750" w:rsidRDefault="00603750" w:rsidP="00603750">
+      <w:pPr>
+        <w:pStyle w:val="Heading3"/>
+      </w:pPr>
+      <w:r>
+        <w:t>6.3. HW3 – Logic &amp; Intelligent Processing (30%)</w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="7F0F3B74" w14:textId="62941509" w:rsidR="00603750" w:rsidRPr="00603750" w:rsidRDefault="00603750" w:rsidP="00603750">
+      <w:r>
+        <w:rPr>
+          <w:b/>
+          <w:bCs/>
+        </w:rPr>
+        <w:t>Goal:</w:t>
+      </w:r>
+      <w:r>
+        <w:t> Add validation and AI-based classification.</w:t>
+      </w:r>
+      
+      
+    </w:p>
+    <w:p w14:paraId="0668DF6F" w14:textId="77777777" w:rsidR="00603750" w:rsidRPr="00603750" w:rsidRDefault="00603750" w:rsidP="00603750">
+      <w:pPr>
+        <w:numPr>
+          <w:ilvl w:val="0"/>
+          <w:numId w:val="9"/>
+        </w:numPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:b/>
+          <w:bCs/>
+        </w:rPr>
+        <w:t>Required workflow pattern:</w:t>
+      </w:r>
+      <w:r>
+        <w:br/>
+        <w:t>Input ({name, email, message}) → Validation (email/field checks) → AI (Intent/Urgency) → CRM/Sheets (record + metadata)</w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="00505668" w14:textId="77777777" w:rsidR="00603750" w:rsidRPr="00603750" w:rsidRDefault="00603750" w:rsidP="00603750">
+      <w:pPr>
+        <w:numPr>
+          <w:ilvl w:val="0"/>
+          <w:numId w:val="9"/>
+        </w:numPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:b/>
+          <w:bCs/>
+        </w:rPr>
+        <w:t>Checks:</w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="250F8649" w14:textId="77777777" w:rsidR="00603750" w:rsidRPr="00603750" w:rsidRDefault="00603750" w:rsidP="00603750">
+      <w:pPr>
+        <w:numPr>
+          <w:ilvl w:val="1"/>
+          <w:numId w:val="9"/>
+        </w:numPr>
+      </w:pPr>
+      <w:r>
+        <w:t>Validation script detects missing fields and invalid emails.</w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="5F9F6254" w14:textId="77777777" w:rsidR="00603750" w:rsidRPr="00603750" w:rsidRDefault="00603750" w:rsidP="00603750">
+      <w:pPr>
+        <w:numPr>
+          <w:ilvl w:val="1"/>
+          <w:numId w:val="9"/>
+        </w:numPr>
+      </w:pPr>
+      <w:r>
+        <w:lastRenderedPageBreak/>
+        <w:t>Invalid leads are </w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:b/>
+          <w:bCs/>
+        </w:rPr>
+        <w:t>not deleted</w:t>
+      </w:r>
+      <w:r>
+        <w:t>, but saved with a </w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:b/>
+          <w:bCs/>
+        </w:rPr>
+        <w:t>&#x201C;Valid/Invalid&#x201D;</w:t>
+      </w:r>
+      <w:r>
+        <w:t> flag.</w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="008C2782" w14:textId="77777777" w:rsidR="00603750" w:rsidRPr="00603750" w:rsidRDefault="00603750" w:rsidP="00603750">
+      <w:pPr>
+        <w:numPr>
+          <w:ilvl w:val="1"/>
+          <w:numId w:val="9"/>
+        </w:numPr>
+      </w:pPr>
+      <w:r>
+        <w:t>AI classifies Intent (e.g., Support, Sales, Partnership) and Urgency (High, Medium, Low).</w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="1BD4446D" w14:textId="77777777" w:rsidR="00603750" w:rsidRPr="00603750" w:rsidRDefault="00603750" w:rsidP="00603750">
+      <w:pPr>
+        <w:numPr>
+          <w:ilvl w:val="1"/>
+          <w:numId w:val="9"/>
+        </w:numPr>
+      </w:pPr>
+      <w:r>
+        <w:t>Sheet/CRM record includes:</w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="3951C4CB" w14:textId="77777777" w:rsidR="00603750" w:rsidRPr="00603750" w:rsidRDefault="00603750" w:rsidP="00603750">
+      <w:pPr>
+        <w:numPr>
+          <w:ilvl w:val="2"/>
+          <w:numId w:val="9"/>
+        </w:numPr>
+      </w:pPr>
+      <w:r>
+        <w:t>Original data</w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="10F771C2" w14:textId="77777777" w:rsidR="00603750" w:rsidRPr="00603750" w:rsidRDefault="00603750" w:rsidP="00603750">
+      <w:pPr>
+        <w:numPr>
+          <w:ilvl w:val="2"/>
+          <w:numId w:val="9"/>
+        </w:numPr>
+      </w:pPr>
+      <w:r>
+        <w:t>Validation status</w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="7FD3DEB6" w14:textId="77777777" w:rsidR="00603750" w:rsidRPr="00603750" w:rsidRDefault="00603750" w:rsidP="00603750">
+      <w:pPr>
+        <w:numPr>
+          <w:ilvl w:val="2"/>
+          <w:numId w:val="9"/>
+        </w:numPr>
+      </w:pPr>
+      <w:r>
+        <w:t>Intent and urgency</w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="7E13F801" w14:textId="77777777" w:rsidR="00603750" w:rsidRPr="00603750" w:rsidRDefault="00603750" w:rsidP="00603750">
+      <w:pPr>
+        <w:numPr>
+          <w:ilvl w:val="0"/>
+          <w:numId w:val="9"/>
+        </w:numPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:b/>
+          <w:bCs/>
+        </w:rPr>
+        <w:t>Success =</w:t>
+      </w:r>
+      <w:r>
+        <w:t> System reliably labels bad data and categorizes valid leads.</w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="270B0A26" w14:textId="77777777" w:rsidR="00603750" w:rsidRPr="00603750" w:rsidRDefault="00603750" w:rsidP="00603750">
+      <w:pPr>
+        <w:pStyle w:val="Heading2"/>
+      </w:pPr>
+      <w:r>
+        <w:t>7. Final Project – Full Workflow</w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="6D911298" w14:textId="29A9EA3B" w:rsidR="00603750" w:rsidRPr="00603750" w:rsidRDefault="00603750" w:rsidP="00603750">
+      <w:r>
+        <w:rPr>
+          <w:b/>
+          <w:bCs/>
+        </w:rPr>
+        <w:t>Goal:</w:t>
+      </w:r>
+      <w:r>
+        <w:t> Build an end-to-end, production-style workflow based on your chosen topic.</w:t>
+      </w:r>
+      
+      
+      
+      
+    </w:p>
+    <w:p w14:paraId="7183334C" w14:textId="77777777" w:rsidR="00603750" w:rsidRPr="00603750" w:rsidRDefault="00603750" w:rsidP="00603750">
+      <w:r>
+        <w:t>Typical pattern (for Lead Capture; others map similarly):</w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="5153E1F8" w14:textId="77777777" w:rsidR="00603750" w:rsidRPr="00603750" w:rsidRDefault="00603750" w:rsidP="00603750">
+      <w:pPr>
+        <w:numPr>
+          <w:ilvl w:val="0"/>
+          <w:numId w:val="10"/>
+        </w:numPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:b/>
+          <w:bCs/>
+        </w:rPr>
+        <w:t>Trigger:</w:t>
+      </w:r>
+      <w:r>
+        <w:t> Form or webhook receives input.</w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="1A10CE93" w14:textId="77777777" w:rsidR="00603750" w:rsidRPr="00603750" w:rsidRDefault="00603750" w:rsidP="00603750">
+      <w:pPr>
+        <w:numPr>
+          <w:ilvl w:val="0"/>
+          <w:numId w:val="10"/>
+        </w:numPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:b/>
+          <w:bCs/>
+        </w:rPr>
+        <w:t>Validation:</w:t>
+      </w:r>
+      <w:r>
+        <w:t> Check required fields, formats, etc.</w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="11D18AF6" w14:textId="77777777" w:rsidR="00603750" w:rsidRPr="00603750" w:rsidRDefault="00603750" w:rsidP="00603750">
+      <w:pPr>
+        <w:numPr>
+          <w:ilvl w:val="0"/>
+          <w:numId w:val="10"/>
+        </w:numPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:b/>
+          <w:bCs/>
+        </w:rPr>
+        <w:t>AI classification:</w:t>
+      </w:r>
+      <w:r>
+        <w:t> Decide category, urgency, or type.</w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="2ECCC3A1" w14:textId="77777777" w:rsidR="00603750" w:rsidRPr="00603750" w:rsidRDefault="00603750" w:rsidP="00603750">
+      <w:pPr>
+        <w:numPr>
+          <w:ilvl w:val="0"/>
+          <w:numId w:val="10"/>
+        </w:numPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:b/>
+          <w:bCs/>
+        </w:rPr>
+        <w:t>AI output:</w:t>
+      </w:r>
+      <w:r>
+        <w:t> Generate email, summary, recommendation, or routing decision.</w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="0079BD2D" w14:textId="77777777" w:rsidR="00603750" w:rsidRPr="00603750" w:rsidRDefault="00603750" w:rsidP="00603750">
+      <w:pPr>
+        <w:numPr>
+          <w:ilvl w:val="0"/>
+          <w:numId w:val="10"/>
+        </w:numPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:b/>
+          <w:bCs/>
+        </w:rPr>
+        <w:t>Persistence:</w:t>
+      </w:r>
+      <w:r>
+        <w:t> Save all data + AI metadata to </w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:b/>
+          <w:bCs/>
+        </w:rPr>
+        <w:t>Sheets/CRM/DB</w:t>
+      </w:r>
+      <w:r>
+        <w:t>.</w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="595B17FA" w14:textId="77777777" w:rsidR="00603750" w:rsidRPr="00603750" w:rsidRDefault="00603750" w:rsidP="00603750">
+      <w:pPr>
+        <w:numPr>
+          <w:ilvl w:val="0"/>
+          <w:numId w:val="10"/>
+        </w:numPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:b/>
+          <w:bCs/>
+        </w:rPr>
+        <w:t>Action:</w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="16B3A73E" w14:textId="77777777" w:rsidR="00603750" w:rsidRPr="00603750" w:rsidRDefault="00603750" w:rsidP="00603750">
+      <w:pPr>
+        <w:numPr>
+          <w:ilvl w:val="1"/>
+          <w:numId w:val="10"/>
+        </w:numPr>
+      </w:pPr>
+      <w:r>
+        <w:t>Send email automatically, or</w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="0523B72A" w14:textId="77777777" w:rsidR="00603750" w:rsidRPr="00603750" w:rsidRDefault="00603750" w:rsidP="00603750">
+      <w:pPr>
+        <w:numPr>
+          <w:ilvl w:val="1"/>
+          <w:numId w:val="10"/>
+        </w:numPr>
+      </w:pPr>
+      <w:r>
+        <w:t>Create a task/ticket, or</w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="46367E3B" w14:textId="77777777" w:rsidR="00603750" w:rsidRPr="00603750" w:rsidRDefault="00603750" w:rsidP="00603750">
+      <w:pPr>
+        <w:numPr>
+          <w:ilvl w:val="1"/>
+          <w:numId w:val="10"/>
+        </w:numPr>
+      </w:pPr>
+      <w:r>
+        <w:t>Schedule a post/summary/action.</w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="063EBEED" w14:textId="77777777" w:rsidR="00603750" w:rsidRPr="00603750" w:rsidRDefault="00603750" w:rsidP="00084126">
+      <w:r>
+        <w:rPr>
+          <w:b/>
+          <w:bCs/>
+        </w:rPr>
+        <w:t>Document</w:t>
+      </w:r>
+      <w:r>
+        <w:t>:</w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="302F4870" w14:textId="77777777" w:rsidR="00603750" w:rsidRPr="00603750" w:rsidRDefault="00603750" w:rsidP="00603750">
+      <w:pPr>
+        <w:numPr>
+          <w:ilvl w:val="1"/>
+          <w:numId w:val="11"/>
+        </w:numPr>
+      </w:pPr>
+      <w:r>
+        <w:t>Prompts (including label sets, tone rules, constraints)</w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="20FACF53" w14:textId="77777777" w:rsidR="00603750" w:rsidRPr="00603750" w:rsidRDefault="00603750" w:rsidP="00603750">
+      <w:pPr>
+        <w:numPr>
+          <w:ilvl w:val="1"/>
+          <w:numId w:val="11"/>
+        </w:numPr>
+      </w:pPr>
+      <w:r>
+        <w:t>Validation logic</w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="50F06670" w14:textId="77777777" w:rsidR="00603750" w:rsidRPr="00603750" w:rsidRDefault="00603750" w:rsidP="00603750">
+      <w:pPr>
+        <w:numPr>
+          <w:ilvl w:val="1"/>
+          <w:numId w:val="11"/>
+        </w:numPr>
+      </w:pPr>
+      <w:r>
+        <w:t>Data schema (fields, types, relations)</w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="31ADC5BC" w14:textId="156813CF" w:rsidR="00084126" w:rsidRDefault="00603750" w:rsidP="00084126">
+      <w:pPr>
+        <w:numPr>
+          <w:ilvl w:val="1"/>
+          <w:numId w:val="11"/>
+        </w:numPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:b/>
+          <w:bCs/>
+        </w:rPr>
+        <w:t>Demonstrate</w:t>
+      </w:r>
+      <w:r>
+        <w:t xml:space="preserve">: At least one complete test flow during the live demo </w:t>
+      </w:r>
+      
+      
+      
+    </w:p>
+    <w:p w14:paraId="5B1433A9" w14:textId="2294632F" w:rsidR="006930E7" w:rsidRDefault="00603750" w:rsidP="00084126">
+      <w:pPr>
+        <w:numPr>
+          <w:ilvl w:val="1"/>
+          <w:numId w:val="11"/>
+        </w:numPr>
+      </w:pPr>
+      <w:r>
+        <w:t>Clear understanding of every step (no &#x201C;black box&#x201D; use of AI)</w:t>
+      </w:r>
+    </w:p>
+    <w:sectPr w:rsidR="006930E7">
+      <w:pgSz w:w="12240" w:h="15840"/>
+      <w:pgMar w:top="1440" w:right="1440" w:bottom="1440" w:left="1440" w:header="708" w:footer="708" w:gutter="0"/>
+      <w:cols w:space="708"/>
+      <w:docGrid w:linePitch="360"/>
+    </w:sectPr>
+  </w:body>
+</w:document>
