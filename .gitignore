@@ -1,5 +1,3 @@
-# Environment variables (credentials - never commit!)
-.env
 
 # Node
 node_modules/
