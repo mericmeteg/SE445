@@ -6,8 +6,8 @@ const express = require('express');
 const cors    = require('cors');
 const path    = require('path');
 
-const { appendLead }             = require('./services/sheetsService');
-const { generateAcknowledgment } = require('./services/aiService');
+const { appendLead }                          = require('./services/sheetsService');
+const { generateAcknowledgment, classifyLead } = require('./services/aiService');
 
 const app  = express();
 const PORT = process.env.PORT || 3000;
@@ -48,7 +48,7 @@ app.get('/', (_req, res) => {
 /**
  * POST /webhook
  * Accepts { name, email, message }
- * → Validates → AI acknowledgment → Google Sheets → JSON response
+ * → Validates (flags invalid, never rejects) → AI classification → AI acknowledgment → Google Sheets → JSON response
  */
 app.post('/webhook', async (req, res) => {
   const startTime = Date.now();
@@ -58,44 +58,49 @@ app.post('/webhook', async (req, res) => {
   const email   = sanitise(req.body.email);
   const message = sanitise(req.body.message);
 
-  // 2. Validate presence
-  const missing = [];
-  if (!name)    missing.push('name');
-  if (!email)   missing.push('email');
-  if (!message) missing.push('message');
+  // 2. Validate — collect issues but DO NOT reject; save with flag instead
+  const validationIssues = [];
+  if (!name)              validationIssues.push('missing name');
+  if (!email)             validationIssues.push('missing email');
+  else if (!isValidEmail(email)) validationIssues.push('invalid email format');
+  if (!message)           validationIssues.push('missing message');
 
-  if (missing.length > 0) {
-    return res.status(400).json({
-      success: false,
-      error:   'Missing required fields',
-      missing,
-    });
+  const isValid        = validationIssues.length === 0;
+  const validationStatus = isValid
+    ? 'Valid'
+    : `Invalid: ${validationIssues.join(', ')}`;
+
+  console.info(`[webhook] Lead received — Name: "${name}", Email: "${email}", Status: ${validationStatus}`);
+
+  // 3. AI classification — intent & urgency (run for all leads)
+  let intent  = 'N/A';
+  let urgency = 'N/A';
+  if (isValid) {
+    try {
+      ({ intent, urgency } = await classifyLead({ name, email, message }));
+    } catch (classErr) {
+      console.error('[webhook] Classification error (non-fatal):', classErr.message);
+      intent  = 'Support';
+      urgency = 'Medium';
+    }
   }
 
-  // 3. Validate email format
-  if (!isValidEmail(email)) {
-    return res.status(400).json({
-      success: false,
-      error:   'Invalid email address',
-    });
-  }
-
-  console.info(`[webhook] New lead received — Name: "${name}", Email: "${email}"`);
-
-  // 4. Generate AI acknowledgment (non-blocking on failure)
+  // 4. Generate AI acknowledgment for valid leads only
   let aiResponse = '';
-  try {
-    aiResponse = await generateAcknowledgment({ name, email, message });
-  } catch (aiErr) {
-    console.error('[webhook] AI service error (non-fatal):', aiErr.message);
-    aiResponse = `Hi ${name}, thank you for your message! We'll be in touch shortly.`;
+  if (isValid) {
+    try {
+      aiResponse = await generateAcknowledgment({ name, email, message });
+    } catch (aiErr) {
+      console.error('[webhook] AI acknowledgment error (non-fatal):', aiErr.message);
+      aiResponse = `Hi ${name}, thank you for your message! We'll be in touch shortly.`;
+    }
   }
 
-  // 5. Save to Google Sheets (non-blocking on failure)
-  let sheetSaved   = false;
-  let sheetError   = null;
+  // 5. Save ALL leads to Google Sheets (valid and invalid alike)
+  let sheetSaved = false;
+  let sheetError = null;
   try {
-    await appendLead({ name, email, message, aiResponse });
+    await appendLead({ name, email, message, validationStatus, intent, urgency, aiResponse });
     sheetSaved = true;
   } catch (sheetErr) {
     console.error('[webhook] Google Sheets error (non-fatal):', sheetErr.message);
@@ -105,11 +110,13 @@ app.post('/webhook', async (req, res) => {
   const elapsed = Date.now() - startTime;
   console.info(`[webhook] Processed in ${elapsed}ms — sheetSaved: ${sheetSaved}`);
 
-  // 6. Respond
-  return res.status(200).json({
-    success:     true,
-    message:     'Lead captured successfully',
-    aiResponse,
+  // 6. Respond — 200 for valid leads, 422 for invalid (but they were still saved)
+  const statusCode = isValid ? 200 : 422;
+  return res.status(statusCode).json({
+    success:          isValid,
+    message:          isValid ? 'Lead captured successfully' : 'Lead saved with validation errors',
+    validationStatus,
+    ...(isValid ? { intent, urgency, aiResponse } : { validationIssues }),
     meta: {
       sheetSaved,
       ...(sheetError ? { sheetError } : {}),

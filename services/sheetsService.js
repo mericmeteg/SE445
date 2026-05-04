@@ -3,7 +3,7 @@
 const { google } = require('googleapis');
 
 // Column order written to the sheet
-const COLUMNS = ['Timestamp', 'Name', 'Email', 'Message', 'AI Response'];
+const COLUMNS = ['Timestamp', 'Name', 'Email', 'Message', 'Validation Status', 'Intent', 'Urgency', 'AI Response'];
 
 /**
  * Returns an authenticated Google Sheets client using a Service Account.
@@ -45,21 +45,22 @@ async function ensureHeaders(sheets, spreadsheetId, sheetName) {
   try {
     const res = await sheets.spreadsheets.values.get({
       spreadsheetId,
-      range: `${sheetName}!A1:E1`,
+      range: `${sheetName}!A1:H1`,
     });
 
     const firstRow = res.data.values?.[0];
-    if (!firstRow || firstRow.length === 0) {
+    const headersMatch = firstRow && JSON.stringify(firstRow) === JSON.stringify(COLUMNS);
+
+    if (!headersMatch) {
       await sheets.spreadsheets.values.update({
         spreadsheetId,
         range: `${sheetName}!A1`,
         valueInputOption: 'RAW',
         requestBody: { values: [COLUMNS] },
       });
-      console.info('[sheetsService] Header row written.');
+      console.info('[sheetsService] Header row updated.');
     }
   } catch (err) {
-    // Non-fatal — proceed even if header check fails
     console.warn('[sheetsService] Could not verify/write headers:', err.message);
   }
 }
@@ -67,7 +68,7 @@ async function ensureHeaders(sheets, spreadsheetId, sheetName) {
 /**
  * Appends a lead row to the Google Sheet.
  *
- * @param {{ name: string, email: string, message: string, aiResponse: string }} lead
+ * @param {{ name: string, email: string, message: string, validationStatus: string, intent: string, urgency: string, aiResponse: string }} lead
  * @returns {Promise<{ updatedRange: string }>}
  */
 async function appendLead(lead) {
@@ -88,18 +89,21 @@ async function appendLead(lead) {
     lead.name,
     lead.email,
     lead.message,
+    lead.validationStatus,
+    lead.intent,
+    lead.urgency,
     lead.aiResponse,
   ];
 
   const response = await sheets.spreadsheets.values.append({
     spreadsheetId,
-    range: `${sheetName}!A:E`,
+    range: `${sheetName}!A:H`,
     valueInputOption: 'USER_ENTERED',
     insertDataOption: 'INSERT_ROWS',
     requestBody: { values: [row] },
   });
 
-  const updatedRange = response.data.updates?.updatedRange ?? `${sheetName}!A?:E?`;
+  const updatedRange = response.data.updates?.updatedRange ?? `${sheetName}!A?:H?`;
   console.info(`[sheetsService] Lead appended → ${updatedRange}`);
 
   return { updatedRange };
