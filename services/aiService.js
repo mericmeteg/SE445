@@ -2,7 +2,7 @@
 
 const { GoogleGenerativeAI } = require('@google/generative-ai');
 
-const MODEL = 'gemini-3.1-flash-lite-preview';
+const MODEL = 'gemini-2.0-flash-lite';
 
 // Low temperature = more deterministic, consistent outputs
 const CLASSIFY_CONFIG = { temperature: 0.1, maxOutputTokens: 32 };
