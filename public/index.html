@@ -3,514 +3,590 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Lead Capture — Contact Us</title>
-  <meta name="description" content="Submit your details and we'll follow up within one business day." />
+  <title>Lead Capture — Get In Touch</title>
+  <meta name="description" content="Send us a message and we'll get back to you within one business day." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
   <style>
-    /* ── Reset & tokens ─────────────────────────────────────────── */
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
     :root {
-      --bg-base:     #0d0f14;
-      --bg-card:     #13161f;
-      --bg-input:    #1a1d29;
-      --border:      #272b3d;
-      --border-focus:#6c63ff;
-      --accent:      #6c63ff;
-      --accent-glow: rgba(108, 99, 255, 0.35);
-      --accent-2:    #a78bfa;
-      --text-primary:#e8eaf6;
-      --text-muted:  #7b82a6;
-      --success-bg:  #0d2b1e;
-      --success-border:#2dd4a0;
-      --success-text:#2dd4a0;
-      --error-bg:    #2b0d0d;
-      --error-border:#f87171;
-      --error-text:  #f87171;
-      --radius-sm:   8px;
-      --radius-md:   14px;
-      --radius-lg:   20px;
-      --transition:  0.22s cubic-bezier(0.4, 0, 0.2, 1);
+      --c-bg:         #f0f4ff;
+      --c-surface:    #ffffff;
+      --c-surface-2:  #f7f9ff;
+      --c-border:     #e2e8f8;
+      --c-border-focus: #3b6ef8;
+      --c-accent:     #3b6ef8;
+      --c-accent-2:   #6b94fc;
+      --c-accent-soft:rgba(59,110,248,0.10);
+      --c-accent-glow:rgba(59,110,248,0.22);
+      --c-text:       #1a2340;
+      --c-text-soft:  #64748b;
+      --c-success:    #16a34a;
+      --c-success-bg: #f0fdf4;
+      --c-success-bd: #bbf7d0;
+      --c-error:      #dc2626;
+      --c-error-bg:   #fef2f2;
+      --c-error-bd:   #fecaca;
+      --r-sm: 10px;
+      --r-md: 16px;
+      --r-lg: 24px;
+      --t: .2s cubic-bezier(.4,0,.2,1);
+      --shadow-sm: 0 1px 3px rgba(30,50,120,.07), 0 1px 2px rgba(30,50,120,.04);
+      --shadow-md: 0 4px 24px rgba(30,50,120,.10), 0 1px 4px rgba(30,50,120,.06);
+      --shadow-lg: 0 12px 48px rgba(30,50,120,.14), 0 2px 8px rgba(30,50,120,.06);
     }
 
     html { scroll-behavior: smooth; }
 
     body {
-      font-family: 'Inter', system-ui, sans-serif;
-      background: var(--bg-base);
-      color: var(--text-primary);
+      font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
+      background: var(--c-bg);
+      color: var(--c-text);
       min-height: 100vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      padding: 24px 16px;
-      /* Subtle animated gradient bg */
+      display: grid;
+      place-items: center;
+      padding: 32px 16px;
       background-image:
-        radial-gradient(ellipse 80% 60% at 20% 10%, rgba(108,99,255,0.12) 0%, transparent 60%),
-        radial-gradient(ellipse 60% 50% at 80% 90%, rgba(167,139,250,0.08) 0%, transparent 60%);
+        radial-gradient(ellipse 70% 50% at 15% 5%,  rgba(59,110,248,.09) 0%, transparent 55%),
+        radial-gradient(ellipse 50% 40% at 85% 95%, rgba(107,148,252,.07) 0%, transparent 55%);
     }
 
-    /* ── Page wrapper ───────────────────────────────────────────── */
-    .page {
+    /* ── Layout ─────────────────────────────────────────────────── */
+    .wrapper {
       width: 100%;
-      max-width: 520px;
+      max-width: 940px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0;
+      background: var(--c-surface);
+      border-radius: var(--r-lg);
+      box-shadow: var(--shadow-lg);
+      overflow: hidden;
+      border: 1px solid var(--c-border);
+    }
+
+    /* ── Left panel ─────────────────────────────────────────────── */
+    .panel-left {
+      background: linear-gradient(160deg, #1e3a8a 0%, #1d4ed8 55%, #3b82f6 100%);
+      padding: 52px 40px;
       display: flex;
       flex-direction: column;
-      gap: 32px;
-    }
-
-    /* ── Header ─────────────────────────────────────────────────── */
-    .header { text-align: center; }
-
-    .badge {
-      display: inline-flex;
-      align-items: center;
-      gap: 6px;
-      background: rgba(108,99,255,0.15);
-      border: 1px solid rgba(108,99,255,0.3);
-      border-radius: 100px;
-      padding: 5px 14px;
-      font-size: 12px;
-      font-weight: 500;
-      color: var(--accent-2);
-      letter-spacing: 0.04em;
-      text-transform: uppercase;
-      margin-bottom: 18px;
-    }
-
-    .badge-dot {
-      width: 7px; height: 7px;
-      border-radius: 50%;
-      background: var(--accent-2);
-      animation: pulse 2s ease-in-out infinite;
-    }
-
-    @keyframes pulse {
-      0%, 100% { opacity: 1; transform: scale(1); }
-      50%       { opacity: 0.55; transform: scale(0.85); }
-    }
-
-    h1 {
-      font-size: clamp(26px, 5vw, 34px);
-      font-weight: 700;
-      line-height: 1.2;
-      background: linear-gradient(135deg, #e8eaf6 0%, var(--accent-2) 100%);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      background-clip: text;
-      margin-bottom: 10px;
-    }
-
-    .subtitle {
-      font-size: 15px;
-      color: var(--text-muted);
-      line-height: 1.6;
-      font-weight: 400;
-    }
-
-    /* ── Card ───────────────────────────────────────────────────── */
-    .card {
-      background: var(--bg-card);
-      border: 1px solid var(--border);
-      border-radius: var(--radius-lg);
-      padding: 36px 32px;
-      box-shadow:
-        0 0 0 1px rgba(108,99,255,0.06),
-        0 24px 64px rgba(0,0,0,0.45),
-        0 2px 8px rgba(0,0,0,0.3);
+      gap: 36px;
       position: relative;
       overflow: hidden;
     }
 
-    .card::before {
+    .panel-left::before {
       content: '';
       position: absolute;
-      top: 0; left: 0; right: 0;
-      height: 1px;
-      background: linear-gradient(90deg, transparent, rgba(108,99,255,0.5), transparent);
+      width: 320px; height: 320px;
+      border-radius: 50%;
+      background: rgba(255,255,255,0.05);
+      top: -80px; right: -100px;
+      pointer-events: none;
     }
 
-    /* ── Form elements ──────────────────────────────────────────── */
-    .form { display: flex; flex-direction: column; gap: 20px; }
+    .panel-left::after {
+      content: '';
+      position: absolute;
+      width: 200px; height: 200px;
+      border-radius: 50%;
+      background: rgba(255,255,255,0.04);
+      bottom: 40px; left: -60px;
+      pointer-events: none;
+    }
 
-    .field { display: flex; flex-direction: column; gap: 7px; }
-
-    label {
-      font-size: 13px;
-      font-weight: 500;
-      color: var(--text-primary);
-      letter-spacing: 0.02em;
+    .brand {
       display: flex;
       align-items: center;
-      gap: 4px;
+      gap: 10px;
     }
 
-    label .required { color: var(--accent-2); }
+    .brand-icon {
+      width: 40px; height: 40px;
+      background: rgba(255,255,255,0.15);
+      border-radius: 10px;
+      display: grid;
+      place-items: center;
+      font-size: 20px;
+      backdrop-filter: blur(4px);
+    }
+
+    .brand-name {
+      font-size: 15px;
+      font-weight: 700;
+      color: #fff;
+      letter-spacing: 0.04em;
+    }
+
+    .panel-left h2 {
+      font-size: clamp(22px, 3vw, 30px);
+      font-weight: 700;
+      color: #fff;
+      line-height: 1.3;
+      position: relative;
+      z-index: 1;
+    }
+
+    .panel-left p {
+      font-size: 14px;
+      color: rgba(255,255,255,0.72);
+      line-height: 1.7;
+      position: relative;
+      z-index: 1;
+      margin-top: 10px;
+    }
+
+    .perks {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      position: relative;
+      z-index: 1;
+    }
+
+    .perk {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+    }
+
+    .perk-icon {
+      width: 34px; height: 34px;
+      background: rgba(255,255,255,0.12);
+      border-radius: 8px;
+      display: grid;
+      place-items: center;
+      font-size: 15px;
+      flex-shrink: 0;
+      backdrop-filter: blur(4px);
+    }
+
+    .perk-text strong {
+      display: block;
+      font-size: 13px;
+      font-weight: 600;
+      color: #fff;
+      margin-bottom: 2px;
+    }
+
+    .perk-text span {
+      font-size: 12px;
+      color: rgba(255,255,255,0.62);
+    }
+
+    .status-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: rgba(255,255,255,0.12);
+      border: 1px solid rgba(255,255,255,0.2);
+      border-radius: 100px;
+      padding: 5px 12px;
+      font-size: 11px;
+      font-weight: 600;
+      color: #fff;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      width: fit-content;
+      backdrop-filter: blur(4px);
+    }
+
+    .status-dot {
+      width: 6px; height: 6px;
+      border-radius: 50%;
+      background: #4ade80;
+      animation: blink 1.8s ease-in-out infinite;
+    }
+
+    @keyframes blink {
+      0%,100% { opacity: 1; }
+      50%      { opacity: 0.35; }
+    }
+
+    /* ── Right panel ─────────────────────────────────────────────── */
+    .panel-right {
+      padding: 48px 40px;
+      display: flex;
+      flex-direction: column;
+      gap: 28px;
+      background: var(--c-surface);
+    }
+
+    .form-header h1 {
+      font-size: 22px;
+      font-weight: 700;
+      color: var(--c-text);
+      margin-bottom: 6px;
+    }
+
+    .form-header p {
+      font-size: 13.5px;
+      color: var(--c-text-soft);
+      line-height: 1.6;
+    }
+
+    /* ── Form ────────────────────────────────────────────────────── */
+    .form { display: flex; flex-direction: column; gap: 18px; }
+
+    .field { display: flex; flex-direction: column; gap: 6px; }
+
+    label {
+      font-size: 12.5px;
+      font-weight: 600;
+      color: var(--c-text);
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      display: flex;
+      gap: 3px;
+      align-items: center;
+    }
+
+    label .req { color: var(--c-accent); }
 
     input, textarea {
-      background: var(--bg-input);
-      border: 1px solid var(--border);
-      border-radius: var(--radius-sm);
-      color: var(--text-primary);
+      background: var(--c-surface-2);
+      border: 1.5px solid var(--c-border);
+      border-radius: var(--r-sm);
+      color: var(--c-text);
       font-family: inherit;
-      font-size: 14.5px;
-      padding: 11px 14px;
-      transition: border-color var(--transition), box-shadow var(--transition);
+      font-size: 14px;
+      padding: 10px 13px;
+      transition: border-color var(--t), box-shadow var(--t), background var(--t);
       outline: none;
       width: 100%;
-      appearance: none;
     }
 
     input::placeholder, textarea::placeholder {
-      color: var(--text-muted);
+      color: #b0bcd4;
       font-weight: 400;
     }
 
     input:focus, textarea:focus {
-      border-color: var(--border-focus);
-      box-shadow: 0 0 0 3px var(--accent-glow);
+      border-color: var(--c-border-focus);
+      background: #fff;
+      box-shadow: 0 0 0 3px var(--c-accent-glow);
+    }
+
+    input.invalid, textarea.invalid {
+      border-color: var(--c-error);
+      box-shadow: 0 0 0 3px rgba(220,38,38,.12);
     }
 
     textarea {
       resize: vertical;
-      min-height: 110px;
+      min-height: 105px;
       line-height: 1.6;
     }
 
-    /* field validation states */
-    input.invalid, textarea.invalid {
-      border-color: var(--error-border);
-      box-shadow: 0 0 0 3px rgba(248,113,113,0.18);
-    }
-
-    .field-error {
-      font-size: 12px;
-      color: var(--error-text);
+    .field-err {
+      font-size: 11.5px;
+      color: var(--c-error);
       display: none;
-      margin-top: 2px;
+      margin-top: 1px;
     }
 
-    .field-error.visible { display: block; }
+    .field-err.show { display: block; }
 
-    /* ── Submit button ──────────────────────────────────────────── */
-    .btn-submit {
-      position: relative;
-      background: var(--accent);
+    /* ── Button ──────────────────────────────────────────────────── */
+    .btn {
+      background: var(--c-accent);
       color: #fff;
       border: none;
-      border-radius: var(--radius-sm);
-      padding: 13px 24px;
+      border-radius: var(--r-sm);
+      padding: 12px 22px;
       font-family: inherit;
-      font-size: 15px;
+      font-size: 14.5px;
       font-weight: 600;
       cursor: pointer;
       width: 100%;
-      margin-top: 4px;
-      transition:
-        background var(--transition),
-        box-shadow var(--transition),
-        transform var(--transition);
       display: flex;
       align-items: center;
       justify-content: center;
       gap: 8px;
-      letter-spacing: 0.01em;
-      overflow: hidden;
+      transition: background var(--t), box-shadow var(--t), transform var(--t);
+      margin-top: 2px;
     }
 
-    .btn-submit:hover:not(:disabled) {
-      background: #7c74ff;
-      box-shadow: 0 0 24px rgba(108,99,255,0.45);
+    .btn:hover:not(:disabled) {
+      background: #2558e8;
+      box-shadow: 0 4px 20px var(--c-accent-glow);
       transform: translateY(-1px);
     }
 
-    .btn-submit:active:not(:disabled) { transform: translateY(0); }
+    .btn:active:not(:disabled) { transform: none; }
 
-    .btn-submit:disabled {
-      opacity: 0.6;
-      cursor: not-allowed;
-    }
+    .btn:disabled { opacity: 0.55; cursor: not-allowed; }
 
-    /* Spinner */
     .spinner {
-      width: 17px; height: 17px;
-      border: 2.5px solid rgba(255,255,255,0.3);
+      width: 16px; height: 16px;
+      border: 2px solid rgba(255,255,255,0.35);
       border-top-color: #fff;
       border-radius: 50%;
-      animation: spin 0.7s linear infinite;
+      animation: spin .65s linear infinite;
       display: none;
     }
 
-    .btn-submit.loading .btn-label { display: none; }
-    .btn-submit.loading .spinner   { display: block; }
+    .btn.loading .lbl    { display: none; }
+    .btn.loading .spinner { display: block; }
 
     @keyframes spin { to { transform: rotate(360deg); } }
 
-    /* ── Response box ───────────────────────────────────────────── */
-    .response-box {
-      border-radius: var(--radius-md);
-      padding: 20px 22px;
+    /* ── Response ────────────────────────────────────────────────── */
+    .response {
+      border-radius: var(--r-md);
+      padding: 18px 20px;
       display: none;
-      animation: fadeSlideIn 0.35s ease;
+      animation: slideUp .3s ease;
     }
 
-    .response-box.success {
-      background: var(--success-bg);
-      border: 1px solid var(--success-border);
+    .response.ok  { background: var(--c-success-bg); border: 1.5px solid var(--c-success-bd); }
+    .response.err { background: var(--c-error-bg);   border: 1.5px solid var(--c-error-bd); }
+    .response.show { display: block; }
+
+    .response-hd {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      margin-bottom: 7px;
     }
 
-    .response-box.error {
-      background: var(--error-bg);
-      border: 1px solid var(--error-border);
-    }
-
-    .response-box.visible { display: block; }
-
-    .response-icon {
-      font-size: 24px;
-      margin-bottom: 10px;
-    }
+    .response-ico { font-size: 18px; }
 
     .response-title {
-      font-size: 15px;
-      font-weight: 600;
-      margin-bottom: 6px;
+      font-size: 14px;
+      font-weight: 700;
     }
 
-    .response-box.success .response-title { color: var(--success-text); }
-    .response-box.error   .response-title { color: var(--error-text); }
+    .response.ok  .response-title { color: var(--c-success); }
+    .response.err .response-title { color: var(--c-error); }
 
     .response-body {
-      font-size: 14px;
-      color: var(--text-muted);
+      font-size: 13.5px;
+      color: var(--c-text-soft);
       line-height: 1.65;
     }
 
-    .ai-tag {
+    .ai-badge {
       display: inline-flex;
       align-items: center;
       gap: 4px;
-      font-size: 11px;
-      font-weight: 500;
-      color: var(--accent-2);
-      background: rgba(108,99,255,0.12);
+      font-size: 10.5px;
+      font-weight: 700;
+      color: var(--c-accent);
+      background: var(--c-accent-soft);
       border-radius: 100px;
-      padding: 2px 9px;
-      margin-bottom: 8px;
+      padding: 2px 8px;
+      margin-bottom: 6px;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+    }
+
+    @keyframes slideUp {
+      from { opacity: 0; transform: translateY(8px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+
+    /* ── Divider ─────────────────────────────────────────────────── */
+    .divider {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-size: 11px;
+      color: var(--c-text-soft);
+      font-weight: 500;
       letter-spacing: 0.04em;
       text-transform: uppercase;
     }
 
-    @keyframes fadeSlideIn {
-      from { opacity: 0; transform: translateY(10px); }
-      to   { opacity: 1; transform: translateY(0); }
+    .divider::before, .divider::after {
+      content: '';
+      flex: 1;
+      height: 1px;
+      background: var(--c-border);
     }
 
-    /* ── Features strip ─────────────────────────────────────────── */
-    .features {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 12px;
-    }
-
-    .feature {
-      background: var(--bg-card);
-      border: 1px solid var(--border);
-      border-radius: var(--radius-md);
-      padding: 16px 14px;
+    /* ── Footer ──────────────────────────────────────────────────── */
+    .footer-note {
       text-align: center;
-    }
-
-    .feature-icon { font-size: 22px; margin-bottom: 7px; }
-    .feature-label { font-size: 12px; color: var(--text-muted); line-height: 1.4; }
-
-    /* ── Footer ─────────────────────────────────────────────────── */
-    .footer {
-      text-align: center;
-      font-size: 12px;
-      color: var(--text-muted);
-      padding-bottom: 8px;
-    }
-
-    .footer code {
-      background: rgba(108,99,255,0.12);
-      border: 1px solid rgba(108,99,255,0.2);
-      border-radius: 4px;
-      padding: 2px 7px;
       font-size: 11.5px;
-      color: var(--accent-2);
-      font-family: 'JetBrains Mono', 'Fira Code', ui-monospace, monospace;
+      color: var(--c-text-soft);
     }
 
-    /* ── Responsive ─────────────────────────────────────────────── */
-    @media (max-width: 480px) {
-      .card { padding: 26px 18px; }
-      .features { grid-template-columns: 1fr 1fr; }
-      .features .feature:last-child { grid-column: span 2; }
+    .footer-note code {
+      background: var(--c-accent-soft);
+      border: 1px solid rgba(59,110,248,0.18);
+      border-radius: 5px;
+      padding: 1px 6px;
+      font-size: 11px;
+      color: var(--c-accent);
+      font-family: ui-monospace, 'Fira Code', monospace;
+    }
+
+    /* ── Responsive ──────────────────────────────────────────────── */
+    @media (max-width: 680px) {
+      .wrapper {
+        grid-template-columns: 1fr;
+        max-width: 480px;
+      }
+
+      .panel-left {
+        padding: 36px 28px;
+        gap: 24px;
+      }
+
+      .panel-right { padding: 32px 24px; }
     }
   </style>
 </head>
 <body>
 
-<main class="page" role="main">
+<div class="wrapper">
 
-  <!-- Header -->
-  <header class="header">
-    <div class="badge">
-      <span class="badge-dot"></span>
-      Webhook Active
+  <!-- ── Left panel ───────────────────────────────────────────────── -->
+  <aside class="panel-left">
+
+    <div class="brand">
+      <div class="brand-icon">🎯</div>
+      <span class="brand-name">LeadCapture</span>
     </div>
-    <h1>Let's Work Together</h1>
-    <p class="subtitle">
-      Send us a message and our AI will acknowledge your inquiry<br />
-      while our team follows up within 1 business day.
-    </p>
-  </header>
 
-  <!-- Form card -->
-  <div class="card" role="region" aria-label="Contact form">
+    <div>
+      <h2>We'd love to hear from you</h2>
+      <p>Drop us a line and our team — backed by AI — will respond within one business day.</p>
+    </div>
+
+    <div class="perks">
+      <div class="perk">
+        <div class="perk-icon">🪝</div>
+        <div class="perk-text">
+          <strong>Webhook triggered</strong>
+          <span>Your message hits our pipeline instantly</span>
+        </div>
+      </div>
+      <div class="perk">
+        <div class="perk-icon">🤖</div>
+        <div class="perk-text">
+          <strong>AI-classified</strong>
+          <span>Intent & urgency scored by Gemini AI</span>
+        </div>
+      </div>
+      <div class="perk">
+        <div class="perk-icon">📊</div>
+        <div class="perk-text">
+          <strong>Logged to Sheets</strong>
+          <span>Every submission is permanently recorded</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="status-pill">
+      <span class="status-dot"></span>
+      Webhook live
+    </div>
+
+  </aside>
+
+  <!-- ── Right panel ──────────────────────────────────────────────── -->
+  <section class="panel-right">
+
+    <div class="form-header">
+      <h1>Send us a message</h1>
+      <p>Fill in the form below and you'll receive an AI-generated acknowledgment right away.</p>
+    </div>
+
     <form id="leadForm" class="form" novalidate>
 
-      <!-- Name -->
       <div class="field">
-        <label for="name">
-          Full Name <span class="required" aria-hidden="true">*</span>
-        </label>
-        <input
-          id="name"
-          type="text"
-          name="name"
-          placeholder="Jane Smith"
-          autocomplete="name"
-          required
-          aria-required="true"
-          aria-describedby="nameError"
-        />
-        <span id="nameError" class="field-error" role="alert">Please enter your name.</span>
+        <label for="name">Full Name <span class="req">*</span></label>
+        <input id="name" type="text" name="name" placeholder="Jane Smith"
+               autocomplete="name" required aria-required="true" aria-describedby="nameErr" />
+        <span id="nameErr" class="field-err" role="alert">Please enter your name.</span>
       </div>
 
-      <!-- Email -->
       <div class="field">
-        <label for="email">
-          Email Address <span class="required" aria-hidden="true">*</span>
-        </label>
-        <input
-          id="email"
-          type="email"
-          name="email"
-          placeholder="jane@example.com"
-          autocomplete="email"
-          required
-          aria-required="true"
-          aria-describedby="emailError"
-        />
-        <span id="emailError" class="field-error" role="alert">Please enter a valid email address.</span>
+        <label for="email">Email Address <span class="req">*</span></label>
+        <input id="email" type="email" name="email" placeholder="jane@example.com"
+               autocomplete="email" required aria-required="true" aria-describedby="emailErr" />
+        <span id="emailErr" class="field-err" role="alert">Please enter a valid email address.</span>
       </div>
 
-      <!-- Message -->
       <div class="field">
-        <label for="message">
-          Message <span class="required" aria-hidden="true">*</span>
-        </label>
-        <textarea
-          id="message"
-          name="message"
-          placeholder="Tell us about your project or how we can help…"
-          required
-          aria-required="true"
-          aria-describedby="messageError"
-        ></textarea>
-        <span id="messageError" class="field-error" role="alert">Please enter your message.</span>
+        <label for="message">Message <span class="req">*</span></label>
+        <textarea id="message" name="message"
+                  placeholder="Tell us about your project or how we can help…"
+                  required aria-required="true" aria-describedby="msgErr"></textarea>
+        <span id="msgErr" class="field-err" role="alert">Please enter your message.</span>
       </div>
 
-      <!-- Submit -->
-      <button id="submitBtn" type="submit" class="btn-submit" aria-live="polite">
-        <span class="btn-label">Send Message →</span>
+      <button id="submitBtn" type="submit" class="btn" aria-live="polite">
+        <span class="lbl">Send Message &nbsp;→</span>
         <span class="spinner" aria-hidden="true"></span>
       </button>
 
     </form>
 
-    <!-- Response box (shown after submit) -->
-    <div id="responseBox" class="response-box" aria-live="polite" aria-atomic="true">
-      <div id="responseIcon" class="response-icon"></div>
-      <div id="responseTitle" class="response-title"></div>
-      <div id="responseBody" class="response-body"></div>
+    <!-- Response block -->
+    <div id="responseBox" class="response" aria-live="polite" aria-atomic="true">
+      <div class="response-hd">
+        <span id="rIco" class="response-ico"></span>
+        <span id="rTitle" class="response-title"></span>
+      </div>
+      <div id="rBody" class="response-body"></div>
     </div>
-  </div>
 
-  <!-- Features strip -->
-  <div class="features" aria-label="Pipeline steps">
-    <div class="feature">
-      <div class="feature-icon">🪝</div>
-      <div class="feature-label">Webhook<br />triggered</div>
-    </div>
-    <div class="feature">
-      <div class="feature-icon">📊</div>
-      <div class="feature-label">Saved to<br />Google Sheets</div>
-    </div>
-    <div class="feature">
-      <div class="feature-icon">🤖</div>
-      <div class="feature-label">AI response<br />generated</div>
-    </div>
-  </div>
+    <div class="divider">Powered by Node.js + Express</div>
 
-  <!-- Footer -->
-  <footer class="footer">
-    Submits to <code>POST /webhook</code> &nbsp;·&nbsp; Built with Node.js + Express
-  </footer>
+    <p class="footer-note">
+      Submits to <code>POST /webhook</code> &nbsp;·&nbsp; AI by Google Gemini
+    </p>
 
-</main>
+  </section>
+</div>
 
 <script>
-  const form       = document.getElementById('leadForm');
-  const submitBtn  = document.getElementById('submitBtn');
-  const responseBox   = document.getElementById('responseBox');
-  const responseIcon  = document.getElementById('responseIcon');
-  const responseTitle = document.getElementById('responseTitle');
-  const responseBody  = document.getElementById('responseBody');
+  const form    = document.getElementById('leadForm');
+  const btn     = document.getElementById('submitBtn');
+  const rBox    = document.getElementById('responseBox');
+  const rIco    = document.getElementById('rIco');
+  const rTitle  = document.getElementById('rTitle');
+  const rBody   = document.getElementById('rBody');
 
-  // ── Client-side validation ─────────────────────────────────────
-  function validateField(id, check, errorId) {
+  // ── Validation ─────────────────────────────────────────────────
+  function check(id, fn, errId) {
     const el  = document.getElementById(id);
-    const err = document.getElementById(errorId);
-    const ok  = check(el.value.trim());
+    const err = document.getElementById(errId);
+    const ok  = fn(el.value.trim());
     el.classList.toggle('invalid', !ok);
-    err.classList.toggle('visible', !ok);
+    err.classList.toggle('show', !ok);
     return ok;
   }
 
   function validateAll() {
-    const nameOk    = validateField('name',    v => v.length > 0,                        'nameError');
-    const emailOk   = validateField('email',   v => /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v),'emailError');
-    const messageOk = validateField('message', v => v.length > 0,                        'messageError');
-    return nameOk && emailOk && messageOk;
+    const a = check('name',    v => v.length > 0,                         'nameErr');
+    const b = check('email',   v => /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v), 'emailErr');
+    const c = check('message', v => v.length > 0,                         'msgErr');
+    return a && b && c;
   }
 
-  // Clear error on input
   ['name', 'email', 'message'].forEach(id => {
     document.getElementById(id).addEventListener('input', () => {
       document.getElementById(id).classList.remove('invalid');
-      document.getElementById(`${id}Error`).classList.remove('visible');
+      const errId = id === 'message' ? 'msgErr' : id + 'Err';
+      document.getElementById(errId).classList.remove('show');
     });
   });
 
-  // ── Form submission ────────────────────────────────────────────
+  // ── Submit ──────────────────────────────────────────────────────
   form.addEventListener('submit', async (e) => {
     e.preventDefault();
-
     if (!validateAll()) return;
 
-    // Hide old response
-    responseBox.className  = 'response-box';
-    responseBox.classList.remove('visible');
-
-    // Loading state
-    submitBtn.disabled = true;
-    submitBtn.classList.add('loading');
-    submitBtn.setAttribute('aria-label', 'Sending…');
+    rBox.className = 'response';
+    btn.disabled = true;
+    btn.classList.add('loading');
 
     const payload = {
       name:    document.getElementById('name').value.trim(),
@@ -520,55 +596,44 @@
 
     try {
       const res  = await fetch('/webhook', {
-        method:  'POST',
+        method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body:    JSON.stringify(payload),
+        body: JSON.stringify(payload),
       });
 
       const data = await res.json();
 
       if (res.ok && data.success) {
-        // Success
-        responseIcon.textContent  = '✅';
-        responseTitle.textContent = 'Message received!';
-        responseBody.innerHTML    =
-          `<span class="ai-tag">✦ AI Response</span><br />${escapeHtml(data.aiResponse)}`;
-        responseBox.className = 'response-box success visible';
+        rIco.textContent   = '✅';
+        rTitle.textContent = 'Message received!';
+        rBody.innerHTML    = `<span class="ai-badge">✦ AI Response</span><br />${escapeHtml(data.aiResponse)}`;
+        rBox.className = 'response ok show';
         form.reset();
       } else {
-        // Server-side validation error
-        const detail = data.missing
-          ? `Missing fields: ${data.missing.join(', ')}`
-          : (data.error || 'Something went wrong.');
-        showError(detail);
+        const detail = data.error || 'Something went wrong. Please try again.';
+        showErr(detail);
       }
 
-    } catch (networkErr) {
-      showError('Could not reach the server. Please check your connection and try again.');
-      console.error('Fetch error:', networkErr);
+    } catch {
+      showErr('Could not reach the server. Please check your connection.');
     } finally {
-      submitBtn.disabled = false;
-      submitBtn.classList.remove('loading');
-      submitBtn.setAttribute('aria-label', '');
+      btn.disabled = false;
+      btn.classList.remove('loading');
     }
   });
 
-  function showError(msg) {
-    responseIcon.textContent  = '⚠️';
-    responseTitle.textContent = 'Submission failed';
-    responseBody.textContent  = msg;
-    responseBox.className = 'response-box error visible';
+  function showErr(msg) {
+    rIco.textContent   = '⚠️';
+    rTitle.textContent = 'Submission failed';
+    rBody.textContent  = msg;
+    rBox.className = 'response err show';
   }
 
-  function escapeHtml(str) {
-    return String(str)
-      .replace(/&/g, '&amp;')
-      .replace(/</g, '&lt;')
-      .replace(/>/g, '&gt;')
-      .replace(/"/g, '&quot;')
-      .replace(/\n/g, '<br />');
+  function escapeHtml(s) {
+    return String(s)
+      .replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;')
+      .replace(/"/g,'&quot;').replace(/\n/g,'<br />');
   }
 </script>
-
 </body>
 </html>
