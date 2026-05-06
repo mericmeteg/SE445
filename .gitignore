@@ -16,3 +16,8 @@ generate_hw1_report.py
 # OS
 .DS_Store
 Thumbs.db
+
+# Student handout & report files
+Student Handout*.docx
+*.pdf
+mericmetegulec_*.docx
