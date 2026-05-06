@@ -1,6 +1,9 @@
 
 # Node
 node_modules/
+
+# Environment variables (sensitive credentials)
+.env
 npm-debug.log*
 
 # Claude Code
